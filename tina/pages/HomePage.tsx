@@ -22,7 +22,7 @@ export default function HomePage(props: Props) {
 
   return (
     <PageWrapper>
-      <Heading tinaDocument={homePage} />
+      <Heading tinaField={tinaField(homePage, "h1")}>{homePage.h1}</Heading>
       <p data-tina-field={tinaField(homePage, "subtitle")}>{homePage.subtitle}</p>
       <div className="prose">
         <TinaMarkdown content={homePage.body} />
