@@ -1,8 +1,7 @@
 import { useTina, tinaField } from "tinacms/dist/react";
-
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import Heading from "@tina/components/Heading.tsx";
-import PageWrapper from '@tina/shared/PageWrapper.tsx'
+import PageWrapper from '@tina/shared/PageWrapper.tsx';
 
 import type { HomePageQuery, HomePageQueryVariables } from "@tina/__generated__/types";
 
