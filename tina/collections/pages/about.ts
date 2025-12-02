@@ -4,7 +4,7 @@ export const AboutPageCollection: Collection = {
 
   name: "aboutPage",
   label: "About Page",
-  path: "src/content/pages/about",
+  path: "tina/content/pages/about",
   format: "json",
 
   ui: {
@@ -17,8 +17,8 @@ export const AboutPageCollection: Collection = {
 
   fields: [
     {
-      name: "meta",
-      label: "Metadata",
+      name: "head",
+      label: "HTML head",
       type: "object",
       fields: [
         {

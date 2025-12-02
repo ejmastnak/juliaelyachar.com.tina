@@ -2,6 +2,8 @@ import { useTina, tinaField } from "tinacms/dist/react";
 
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import Heading from "@tina/components/Heading.tsx";
+import PageWrapper from '@tina/shared/PageWrapper.tsx'
+
 import type { HomePageQuery, HomePageQueryVariables } from "@tina/__generated__/types";
 
 type Props = {
@@ -19,14 +21,12 @@ export default function HomePage(props: Props) {
   const homePage = data.homePage;
 
   return (
-    <div>
+    <PageWrapper>
       <Heading tinaDocument={homePage} />
-
       <p data-tina-field={tinaField(homePage, "subtitle")}>{homePage.subtitle}</p>
-
       <div className="prose">
         <TinaMarkdown content={homePage.body} />
       </div>
-    </div>
+    </PageWrapper>
   );
 }

@@ -6,7 +6,7 @@ import react from '@astrojs/react';
 import tinaDirective from "./astro-tina-directive/register"
 
 export default defineConfig({
-  site: process.env.SITE_URL || '',
+  site: process.env.SITE_URL || 'https://jemastnak.com',
   integrations: [mdx(), sitemap(), react(), tinaDirective()],
   vite: {
     resolve: {

@@ -1,27 +1,32 @@
 ---
-interface Props { string, title: string, description: string, }
-const { title, description, } = Astro.props as Props;
 import "@/assets/css/tailwind.css";
+import "@/assets/css/fonts.css";
+
+interface Props {
+  head: { title: string, description: string },
+}
+const { head, } = Astro.props as Props;
 ---
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={head.description} />
+    <title>{head.title}</title>
+
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="manifest" href="/favicon/site.webmanifest">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content={Astro.generator} />
-    <meta name="description" content={description} />
-    <title>{title}</title>
   </head>
 
   <body>
-    <main class="max-w-7xl mx-auto relative">
-      <div class="max-w-5xl px-5 sm:px-8 py-8 sm:py-12 mx-auto">
-        <slot />
-      </div>
+    <!-- <Nav /> -->
+    <main class="mx-auto">
+      <slot />
     </main>
+    <!-- <Footer> -->
   </body>
 
 </html>

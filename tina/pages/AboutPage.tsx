@@ -1,5 +1,6 @@
 import { useTina, tinaField } from "tinacms/dist/react";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
+import PageWrapper from '@tina/shared/PageWrapper.tsx'
 import Heading from "@tina/components/Heading.tsx";
 import type { AboutPageQuery, AboutPageQueryVariables } from "@tina/__generated__/types";
 
@@ -18,7 +19,7 @@ export default function AboutPage(props: Props) {
   const aboutPage = data.aboutPage;
 
   return (
-    <div>
+    <PageWrapper>
       <Heading tinaDocument={aboutPage} />
 
       <p className="mt-5" data-tina-field={tinaField(aboutPage, "subtitle")}>{aboutPage.subtitle}</p>
@@ -27,6 +28,6 @@ export default function AboutPage(props: Props) {
         <TinaMarkdown content={aboutPage.body} />
       </div>
 
-    </div>
+    </PageWrapper>
   );
 }

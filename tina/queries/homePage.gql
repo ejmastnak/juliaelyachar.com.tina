@@ -19,7 +19,7 @@ query myHomePage($relativePath: String!) {
 
 fragment MyHomePageParts on HomePage {
   __typename
-  meta {
+  head {
     __typename
     title
     description

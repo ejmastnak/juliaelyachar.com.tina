@@ -19,7 +19,7 @@ query myAboutPage($relativePath: String!) {
 
 fragment MyAboutPageParts on AboutPage {
   __typename
-  meta {
+  head {
     __typename
     title
     description

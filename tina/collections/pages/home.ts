@@ -4,7 +4,7 @@ export const HomePageCollection: Collection = {
 
   name: "homePage",
   label: "Home Page",
-  path: "src/content/pages/home",
+  path: "tina/content/pages/home",
   format: "json",
 
   ui: {
@@ -17,8 +17,8 @@ export const HomePageCollection: Collection = {
 
   fields: [
     {
-      name: "meta",
-      label: "Metadata",
+      name: "head",
+      label: "HTML head",
       type: "object",
       fields: [
         {

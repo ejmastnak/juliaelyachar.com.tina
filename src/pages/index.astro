@@ -3,19 +3,10 @@ import client from "@tina/__generated__/client";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import HomePage from "@tina/pages/HomePage.tsx";
 
-const homePageEnvelope = await client.queries.myHomePage({ relativePath: "home.json" });
-
-const title = homePageEnvelope.data.homePage.meta.title;
-const description = homePageEnvelope.data.homePage.meta.description;
+const content = await client.queries.myHomePage({ relativePath: "home.json" });
+const head = content.data.homePage.head;
 ---
 
-<BaseLayout title={title} description={description}>
-  <div>
-    <HomePage {...homePageEnvelope} client:tina />
-
-    <pre>
-      {JSON.stringify(homePageEnvelope, null, 2)}
-    </pre>
-
-  </div>
+<BaseLayout head={head}>
+  <HomePage {...content} client:tina />
 </BaseLayout>
