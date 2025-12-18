@@ -19,7 +19,7 @@ export default function AboutPage(props: Props) {
 
   return (
     <PageWrapper>
-      <h1 className="text-3xl" tinaField={tinaField(aboutPage, "h1")}>{aboutPage.h1}</h1>
+      <h1 className="text-3xl" data-tina-field={tinaField(aboutPage, "h1")}>{aboutPage.h1}</h1>
       <p className="mt-5" data-tina-field={tinaField(aboutPage, "subtitle")}>{aboutPage.subtitle}</p>
       <div className="prose mt-5" data-tina-field={tinaField(aboutPage, "body")}>
         <TinaMarkdown content={aboutPage.body} />
