@@ -1,9 +1,8 @@
 import { useTina, tinaField } from "tinacms/dist/react";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import PageWrapper from '@tina/shared/PageWrapper.tsx'
-import Heading from "@tina/components/Heading.tsx";
-import type { AboutPageQuery, AboutPageQueryVariables } from "@tina/__generated__/types";
 
+import type { AboutPageQuery, AboutPageQueryVariables } from "@tina/__generated__/types";
 type Props = {
   variables: AboutPageQueryVariables;
   data: AboutPageQuery;
@@ -20,7 +19,7 @@ export default function AboutPage(props: Props) {
 
   return (
     <PageWrapper>
-      <Heading tinaField={tinaField(aboutPage, "h1")}>{aboutPage.h1}</Heading>
+      <h1 className="text-3xl" tinaField={tinaField(aboutPage, "h1")}>{aboutPage.h1}</h1>
       <p className="mt-5" data-tina-field={tinaField(aboutPage, "subtitle")}>{aboutPage.subtitle}</p>
       <div className="prose mt-5" data-tina-field={tinaField(aboutPage, "body")}>
         <TinaMarkdown content={aboutPage.body} />

@@ -1,5 +1,5 @@
 import { useRef, useEffect } from "react";
-import { useTina, tinaField } from "tinacms/dist/react";
+import { useTina, } from "tinacms/dist/react";
 import client from "@tina/__generated__/client";
 import NavLink from '@tina/components/NavLink.tsx';
 import { XMarkIcon, Bars3Icon } from '@heroicons/react/24/outline';
@@ -47,7 +47,7 @@ export default function Nav({currentPathname}: Props) {
           {/* Desktop */}
           <ul className="hidden sm:flex flex gap-x-8 mr-5">
             {nav.navLinks.map((navLink) => (
-              <li key={navLink.href}><NavLink href={navLink.href} currentPathname={currentPathname} tinaField={tinaField(navLink)}>{navLink.text}</NavLink></li>
+              <li key={navLink.href}><NavLink href={navLink.href} currentPathname={currentPathname}>{navLink.text}</NavLink></li>
             ))}
           </ul>
 
@@ -61,7 +61,7 @@ export default function Nav({currentPathname}: Props) {
             <el-menu ref={menuRef} anchor="bottom end" popover class="m-0 origin-top-right rounded-md bg-white p-0 shadow-lg outline outline-1 outline-black/5 transition [--anchor-gap:theme(spacing.2)] [transition-behavior:allow-discrete] data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in dark:bg-gray-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10 w-fit min-w-[160px]">
               <ul className="flex flex-col px-8 pt-6 pb-8 text-left mx-auto gap-y-4">
                 {nav.navLinks.map((navLink) => (
-                  <li key={navLink.href} className="border-b border-gray-200"><NavLink href={navLink.href} currentPathname={currentPathname} tinaField={tinaField(navLink)}>{navLink.text}</NavLink></li>
+                  <li key={navLink.href} className="border-b border-gray-200"><NavLink href={navLink.href} currentPathname={currentPathname}>{navLink.text}</NavLink></li>
                 ))}
               </ul>
             </el-menu>

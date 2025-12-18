@@ -1,7 +1,7 @@
 ---
 import "@/assets/css/tailwind.css";
 import "@/assets/css/fonts.css";
-import ReactBaseLayout from '@tina/shared/ReactBaseLayout'
+import Nav from '@/shared/Nav.astro'
 
 interface Props {
   head: { title: string, description: string },
@@ -27,9 +27,11 @@ const currentPathname = Astro.url.pathname;
   </head>
 
   <body>
-    <ReactBaseLayout currentPathname={currentPathname}>
+    <Nav />
+    <main className="mx-auto">
       <slot />
-    </ReactBaseLayout>
+    </main>
+    <!-- <Footer /> -->
   </body>
 
 </html>
