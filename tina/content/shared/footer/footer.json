@@ -1,0 +1,15 @@
+{
+  "name": "Julia Elyachar",
+  "email": "elyachar@princeton.edu",
+  "address": "Department of Anthropology\n\n130 Aaron Burr Hall\n\nPrinceton, NJ 08545\n",
+  "footerLinks": [
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/about",
+      "text": "About"
+    }
+  ]
+}

@@ -2,6 +2,7 @@
 import "@/assets/css/tailwind.css";
 import "@/assets/css/fonts.css";
 import Nav from '@/shared/Nav.astro'
+import Footer from '@/shared/Footer.astro'
 
 interface Props {
   head: { title: string, description: string },
@@ -26,12 +27,12 @@ const currentPathname = Astro.url.pathname;
     <script src="/src/lib/elements.js"></script>
   </head>
 
-  <body>
-    <Nav />
-    <main className="mx-auto">
+  <body class="min-h-screen flex flex-col">
+    <Nav class="shrink-0" />
+    <main class="mx-auto flex-grow">
       <slot />
     </main>
-    <!-- <Footer /> -->
+    <Footer class="shrink-0" />
   </body>
 
 </html>

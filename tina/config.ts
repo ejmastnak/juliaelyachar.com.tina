@@ -2,6 +2,7 @@ import { defineConfig } from "tinacms";
 import { HomePageCollection } from "@tina/collections/pages/home.ts";
 import { AboutPageCollection } from "@tina/collections/pages/about.ts";
 import { NavCollection } from "@tina/collections/shared/nav.ts";
+import { FooterCollection } from "@tina/collections/shared/footer.ts";
 
 const branch =
   process.env.GITHUB_BRANCH ||
@@ -26,6 +27,7 @@ export default defineConfig({
   schema: {
     collections: [
       NavCollection,
+      FooterCollection,
       HomePageCollection,
       AboutPageCollection,
     ],
