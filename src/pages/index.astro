@@ -1,12 +1,20 @@
 ---
 import client from "@tina/__generated__/client";
+import { getImage } from 'astro:assets';
+import { resolveTinaImage } from "@/lib/resolveImage";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Home from "@tina/pages/Home/Index.tsx";
 
 const content = await client.queries.myHomePage({ relativePath: "home.json" });
 const head = content.data.homePage.head;
+
+
+const bookImg = content.data.homePage.bookImg;
+const bookImgAlt = content.data.homePage.bookImgAlt;
+const raw = await resolveTinaImage(bookImg);
+const optimized = raw ? await getImage({ src: raw, width: 800, alt: bookImgAlt, }) : null;
 ---
 
 <BaseLayout head={head}>
-  <Home {...content} client:tina />
+  <Home {...content} bookImg={optimized} client:tina />
 </BaseLayout>
