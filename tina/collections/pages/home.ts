@@ -46,6 +46,26 @@ export const HomePageCollection: Collection = {
       required: true,
     },
     {
+      name: 'heroImg',
+      label: 'Profile Image',
+      type: 'image',
+    },
+    {
+      name: 'heroImgAlt',
+      label: 'Profile Image Alt Text',
+      type: 'string',
+    },
+    {
+      name: 'bookImg',
+      label: 'Semicivilized Book Image',
+      type: 'image',
+    },
+    {
+      name: 'bookImgAlt',
+      label: 'Semicivilized Book Image Alt Text',
+      type: 'string',
+    },
+    {
       name: "body",
       label: "Body",
       type: "rich-text",

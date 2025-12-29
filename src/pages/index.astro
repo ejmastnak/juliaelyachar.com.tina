@@ -1,12 +1,12 @@
 ---
 import client from "@tina/__generated__/client";
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import HomePage from "@tina/pages/HomePage.tsx";
+import Home from "@tina/pages/Home/Index.tsx";
 
 const content = await client.queries.myHomePage({ relativePath: "home.json" });
 const head = content.data.homePage.head;
 ---
 
 <BaseLayout head={head}>
-  <HomePage {...content} client:tina />
+  <Home {...content} client:tina />
 </BaseLayout>

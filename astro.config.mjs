@@ -4,6 +4,7 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import react from '@astrojs/react';
 import tinaDirective from "./astro-tina-directive/register"
+import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 export default defineConfig({
   site: process.env.SITE_URL || 'https://jemastnak.com',
@@ -14,5 +15,10 @@ export default defineConfig({
         '@': '/src',
       },
     },
+    plugins: [
+      ViteImageOptimizer({
+        /* pass your config */
+      }),
+    ],
   },
 });

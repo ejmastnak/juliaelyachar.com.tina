@@ -3,6 +3,8 @@ import { HomePageCollection } from "@tina/collections/pages/home.ts";
 import { AboutPageCollection } from "@tina/collections/pages/about.ts";
 import { NavCollection } from "@tina/collections/shared/nav.ts";
 import { FooterCollection } from "@tina/collections/shared/footer.ts";
+import { PublicationCategoryCollection } from "@tina/collections/shared/publicationCategory.ts";
+import { PublicationCollection } from "@tina/collections/shared/publication.ts";
 
 const branch =
   process.env.GITHUB_BRANCH ||
@@ -30,6 +32,8 @@ export default defineConfig({
       FooterCollection,
       HomePageCollection,
       AboutPageCollection,
+      PublicationCategoryCollection,
+      PublicationCollection,
     ],
   },
 });
