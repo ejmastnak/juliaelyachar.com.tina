@@ -4,7 +4,6 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import react from '@astrojs/react';
 import tinaDirective from "./astro-tina-directive/register"
-import vsharp from 'vite-plugin-vsharp';
 
 export default defineConfig({
   site: process.env.SITE_URL || 'https://jemastnak.com',
@@ -15,12 +14,5 @@ export default defineConfig({
         '@': '/src',
       },
     },
-    plugins: [
-      vsharp({
-        includePublic: [
-          "public/img/*", 
-        ],
-      }),
-    ],
   },
 });
