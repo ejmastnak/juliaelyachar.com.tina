@@ -7,12 +7,12 @@ export const PublicationCollection: Collection = {
   path: "tina/content/shared/publication",
   format: "json",
 
-  // ui: {
-  //   allowedActions: {
-  //     create: false,
-  //     delete: false,
-  //   },
-  // },
+  ui: {
+    allowedActions: {
+      create: false,
+      delete: false,
+    },
+  },
 
   fields: [
     {
@@ -21,28 +21,53 @@ export const PublicationCollection: Collection = {
       type: "object",
       list: true,
       itemProps: (item) => {
-        return { label: item?.title };
+        return { label: item?.citation };
       },
       defaultItem: {
-        title: "Title",
+        citation: "“Markets, Morality, and the State.” *Example Journal of Social Theory* 12, no. 2 (April 2018): 123–45.",
+        category: "tina/content/shared/publicationCategory/ngos.json",
         href: "www.publication.com",
       },
       fields: [
         {
-          name: "title",
+          name: "citation",
           label: "Title",
-          type: "string",
+          type: "rich-text",
+          required: true,
         },
         {
           name: 'category',
           label: 'Category',
           type: 'reference',
           collections: ['publicationCategory'],
+          required: true,
+          ui: {
+            optionComponent: (
+              props: {
+                name: string,
+              },
+              _internalSys: { path: string }
+            ) => {
+              return props.name;
+            }
+          }
         },
         {
-          name: "href",
-          label: "link",
-          type: "string",
+          name: 'img',
+          label: 'Image',
+          type: 'image',
+        },
+        {
+          name: 'href',
+          label: 'Link',
+          type: 'string',
+          required: true,
+        },
+        {
+          name: 'featured',
+          label: 'Featured on home page?',
+          type: "boolean",
+          required: true,
         },
       ]
     },

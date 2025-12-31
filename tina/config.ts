@@ -5,6 +5,7 @@ import { NavCollection } from "@tina/collections/shared/nav.ts";
 import { FooterCollection } from "@tina/collections/shared/footer.ts";
 import { PublicationCategoryCollection } from "@tina/collections/shared/publicationCategory.ts";
 import { PublicationCollection } from "@tina/collections/shared/publication.ts";
+import { EventCollection } from "@tina/collections/shared/event.ts";
 
 import { TINA_MEDIA_ROOT, TINA_PUBLIC_FOLDER, TINA_SUPPORTED_IMAGE_MIMES } from "@src/assets/config.ts";
 
@@ -37,6 +38,7 @@ export default defineConfig({
       AboutPageCollection,
       PublicationCategoryCollection,
       PublicationCollection,
+      EventCollection,
     ],
   },
 });

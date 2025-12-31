@@ -16,6 +16,9 @@ export const HomePageCollection: Collection = {
   },
 
   fields: [
+    // -------------------------------------------------------- //
+    // Head
+    // -------------------------------------------------------- //
     {
       name: "head",
       label: "HTML head",
@@ -33,27 +36,59 @@ export const HomePageCollection: Collection = {
         },
       ],
     },
+
+    // -------------------------------------------------------- //
+    // Hero
+    // -------------------------------------------------------- //
     {
-      name: "h1",
-      label: "Heading",
+      name: "heroHeading",
+      label: "Main heading",
       type: "string",
       required: true,
     },
     {
-      name: "subtitle",
-      label: "Subtitle",
-      type: "string",
+      name: "heroDescription",
+      label: "Description",
+      type: "rich-text",
       required: true,
     },
     {
       name: 'heroImg',
-      label: 'Profile Image',
+      label: 'Profile image',
       type: 'image',
     },
     {
       name: 'heroImgAlt',
-      label: 'Profile Image Alt Text',
+      label: 'Profile image alt text',
       type: 'string',
+    },
+    {
+      name: "heroButtonText",
+      label: "Button text",
+      type: "rich-text",
+      required: true,
+    },
+
+    // -------------------------------------------------------- //
+    // Book partial
+    // -------------------------------------------------------- //
+    {
+      name: 'bookHeading',
+      label: 'Book heading',
+      type: 'string',
+      required: true,
+    },
+    {
+      name: 'bookSubtitle',
+      label: 'Book subtitle',
+      type: 'string',
+      required: true,
+    },
+    {
+      name: 'bookDescription',
+      label: 'Book description',
+      type: 'rich-text',
+      required: true,
     },
     {
       name: 'bookImg',
@@ -66,10 +101,65 @@ export const HomePageCollection: Collection = {
       type: 'string',
     },
     {
-      name: "body",
-      label: "Body",
-      type: "rich-text",
+      name: 'bookButtonText',
+      label: 'Book button text',
+      type: 'string',
       required: true,
     },
+
+    // -------------------------------------------------------- //
+    // Publications
+    // -------------------------------------------------------- //
+    {
+      name: 'publicationsHeading',
+      label: 'Publications heading',
+      type: 'string',
+      required: true,
+    },
+    {
+      name: 'publicationsButtonText',
+      label: 'Publications button text',
+      type: 'string',
+      required: true,
+    },
+
+    // -------------------------------------------------------- //
+    // About
+    // -------------------------------------------------------- //
+    {
+      name: 'aboutHeading',
+      label: 'About heading',
+      type: 'string',
+      required: true,
+    },
+    {
+      name: 'aboutDescription',
+      label: 'About description',
+      type: 'rich-text',
+      required: true,
+    },
+    {
+      name: 'aboutButtonText',
+      label: 'About button text',
+      type: 'string',
+      required: true,
+    },
+
+    // -------------------------------------------------------- //
+    // Events
+    // -------------------------------------------------------- //
+    {
+      name: 'eventsHeading',
+      label: 'Events heading',
+      type: 'string',
+      required: true,
+    },
+    {
+      name: 'eventsButtonText',
+      label: 'Events button text',
+      type: 'string',
+      required: true,
+    },
+
   ],
 };

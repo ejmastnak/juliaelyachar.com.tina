@@ -7,10 +7,13 @@ type Props = {
   href: string,
   review: string,
   reviewer: string,
+  imgTinaField?: string,
+  titleTinaField?: string,
+  subtitleTinaField?: string,
   children: ReactNode;
 };
 
-export default function Book({ img, imgAlt, imgClasses, title, subtitle, href, review, reviewer, children }: Props) {
+export default function Book({ img, imgAlt, imgClasses, title, subtitle, href, review, reviewer, imgTinaField, titleTinaField, subtitleTinaField, children }: Props) {
 
   return (
     <div>
@@ -20,17 +23,17 @@ export default function Book({ img, imgAlt, imgClasses, title, subtitle, href, r
         <div className="text-center md:hidden">
           {
             href
-              ? <a href={href} className=""><h2 className="text-3xl font-semibold hover:underline">{title}</h2></a> 
-              : <h2 className="text-3xl font-semibold">{title}</h2>
+              ? <a href={href} className=""><h2 data-tina-field={titleTinaField} className="text-3xl font-semibold hover:underline">{title}</h2></a> 
+              : <h2 data-tina-field={titleTinaField} className="text-3xl font-semibold">{title}</h2>
           }
-          <p className="mt-1">{subtitle}</p>
+          <p data-tina-field={subtitleTinaField} className="mt-1">{subtitle}</p>
         </div>
 
         <div className="mx-auto w-fit my-6 md:my-0 ">
           {
             href
-              ? <a href={href}><img src={img} alt={imgAlt} className={`max-w-md h-96 rounded object-cover object-right hover:ring-2 hover:ring-sc-brown hover:shadow-lg ${imgClasses ? imgClasses : ''}`}/></a>
-              : <img src={img} alt={imgAlt} className={`max-w-md h-96 rounded object-cover object-right ${imgClasses ? imgClasses : ''}`}/>
+              ? <a href={href}><img src={img} alt={imgAlt} data-tina-field={imgTinaField} className={`max-w-md h-96 rounded object-cover object-right hover:ring-2 hover:ring-sc-brown hover:shadow-lg ${imgClasses ? imgClasses : ''}`}/></a>
+              : <img src={img} alt={imgAlt} data-tina-field={imgTinaField} className={`max-w-md h-96 rounded object-cover object-right ${imgClasses ? imgClasses : ''}`}/>
           }
         </div>
 
@@ -38,10 +41,10 @@ export default function Book({ img, imgAlt, imgClasses, title, subtitle, href, r
           <div className="hidden md:block">
             {
               href
-                ? <a href={href}><h2 className="text-3xl font-semibold hover:underline">{title}</h2></a>
-                : <h2 className="text-3xl font-semibold">{title}</h2>
+                ? <a href={href}><h2 data-tina-field={titleTinaField} className="text-3xl font-semibold hover:underline">{title}</h2></a>
+                : <h2 data-tina-field={titleTinaField} className="text-3xl font-semibold">{title}</h2>
             }
-            <p className="mt-1">{subtitle}</p>
+            <p data-tina-field={subtitleTinaField} className="mt-1">{subtitle}</p>
           </div>
           <div className="mt-5">
             {children}

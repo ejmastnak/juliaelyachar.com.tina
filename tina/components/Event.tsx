@@ -1,4 +1,5 @@
 import { ChevronRightIcon } from '@heroicons/react/24/outline'
+import { TinaMarkdown } from "tinacms/dist/rich-text";
 
 type Props = {
   event: {
@@ -8,7 +9,7 @@ type Props = {
     time?: string,
     location: string,
     description: string,
-    href: string,
+    href?: string,
   }
 };
 
@@ -57,12 +58,12 @@ export default function Event({event}: Props) {
       </div>
 
       <div>
-        <p className="font-semibold">{event.title}</p>
+        <div className="font-semibold"><TinaMarkdown content={event.title} /></div>
         <p className="italic text-sm">{event.institution}</p>
-        <p className="mt-px text-gray-700 text-sm">{event.tye}</p>
+        <p className="mt-px text-gray-700 text-sm">{event.type}</p>
         <p className="text-gray-700 text-sm">{event.location}</p>
-        <p className="mt-3 text-sm max-w-2xl">{event.description}</p>
-        {event.href && <a href={event.href} className="mt-3 w-fit text-sm font-semibold flex items-center hover:text-gray-900 hover:underline"><span>{event.hrefText}</span> <ChevronRightIcon className="size-5 shrink-0 translate-y-px"/></a>}
+        <div className="mt-3 text-sm max-w-2xl"><TinaMarkdown content={event.description} /></div>
+        {event.href && <a href={event.href} className="mt-3 w-fit text-sm font-semibold flex items-center hover:text-gray-900 hover:underline"><span>Link</span> <ChevronRightIcon className="size-5 shrink-0 translate-y-px"/></a>}
       </div>
     </div>
   );

@@ -24,11 +24,22 @@ fragment MyHomePageParts on HomePage {
     title
     description
   }
-  h1
-  subtitle
+  heroHeading
+  heroDescription
+  heroButtonText
   heroImg
   heroImgAlt
+  bookHeading
+  bookSubtitle
+  bookDescription
   bookImg
   bookImgAlt
-  body
+  bookButtonText
+  publicationsHeading
+  publicationsButtonText
+  aboutHeading
+  aboutDescription
+  aboutButtonText
+  eventsHeading
+  eventsButtonText
 }

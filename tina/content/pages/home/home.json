@@ -3,11 +3,22 @@
     "title": "Home",
     "description": "The home page"
   },
-  "h1": "Home",
-  "subtitle": "Foo the loo!",
+  "heroHeading": "Julia Elyachar",
+  "heroDescription": "Julia Elyachar is an anthropologist, political economist, and award winning author.\n\nShe was trained in anthropology, economics, history of political and economic thought, political economy, social theory, Middle Eastern Studies, and Arabic language. She is an associate professor of anthropology at Princeton University, and associate professor at the Princeton Institute for International and Regional Studies. She is a Faculty Researcher with the Dignity and Debt network and serves on the Executive Boards of the Princeton Institute for International and Regional Studies, and the Center for Iran and Persian Gulf Studies.\n",
+  "heroButtonText": "New book: *On the Semicivilized*\n",
   "heroImg": "/src/assets/img/uploads/julia.jpg",
   "heroImgAlt": "Image of Julia",
+  "bookHeading": "On the Semicivilized",
+  "bookSubtitle": "Coloniality, Finance, and Embodied Sovereignty in Cairo",
+  "bookDescription": "*On the Semicivilized* is a sweeping analysis of the coloniality that shaped—and blocked—sovereign futures for those dubbed barbarian and semicivilized in the former Ottoman Empire.\n\nDrawing on thirty years of ethnographic research in Cairo, family archives from Palestine and Egypt, and research on Ottoman debt and finance, Elyachar theorizes a global condition of the “semicivilized” marked by nonsovereign futures, crippling debts, and the constant specter of violence exercised by those who call themselves civilized, inviting us to rethink catastrophe and potentiality in Cairo and the world today.\n",
   "bookImg": "/src/assets/img/uploads/semicivilized.jpg",
   "bookImgAlt": "Cover of \"On the Semicivilized\"",
-  "body": "Well this is some new text added locally.\n\n**Lorem ipsum dolor sit amet, consectetur** adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\n## Duis\n\naute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n"
+  "bookButtonText": "More books",
+  "publicationsHeading": "Recent articles and chapters",
+  "publicationsButtonText": "More publications",
+  "aboutHeading": "About Professor Elyachar",
+  "aboutDescription": "Julia Elyachar is associate professor of anthropology at the Princeton University Department of Anthropology and the Princeton Institute for International and Regional Studies. She is the author of the books *On the Semicivilized: Coloniality, Finance, and Embodied Sovereignty in Cairo* and *Markets of Dispossession: NGOs, Economic Development, and the State in Cairo*. Her work draws on fine-grained ethnography and regional expertise in the Middle East, Levant, and the Maghreb to open up areas for theoretical inquiry and conceptional innovation in anthropology and the social sciences more broadly.\n",
+  "aboutButtonText": "More about Professor Elyachar",
+  "eventsHeading": "Events",
+  "eventsButtonText": "More events"
 }

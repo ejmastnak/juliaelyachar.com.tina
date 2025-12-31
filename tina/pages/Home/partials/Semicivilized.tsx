@@ -2,6 +2,7 @@ import { tinaField } from "tinacms/dist/react";
 import type { HomePageQuery } from "@tina/__generated__/types";
 import Book from '@tina/components/Book.tsx'
 import LinkButton from '@tina/components/LinkButton.tsx'
+import { TinaMarkdown } from "tinacms/dist/rich-text";
 
 type Props = {
   homePage: HomePageQuery
@@ -12,23 +13,21 @@ export default function Semicivilized({ homePage }: Props) {
     <Book
       img={homePage.bookImg}
       imgAlt={homePage.bookImgAlt}
-      title="On the Semicivilized"
+      title={homePage.bookHeading}
+      subtitle={homePage.bookSubtitle}
       to="/books/on-the-semicivilized"
-      subtitle="Coloniality, Finance, and Embodied Sovereignty in Cairo"
       review={null}
       reviewer={null}
+      imgTinaField={tinaField(homePage, "bookImg")}
+      titleTinaField={tinaField(homePage, "bookHeading")}
+      subtitleTinaField={tinaField(homePage, "bookSubtitle")}
     >
-      <p>
-        <span className="italic">On the Semicivilized</span> is a sweeping analysis of the coloniality that shaped—and blocked—sovereign futures for those dubbed barbarian and semicivilized in the former Ottoman Empire.
-      </p>
-      <p className="mt-2">
-        Drawing on thirty years of ethnographic research in Cairo, family archives from Palestine and Egypt, and research on Ottoman debt and finance, Elyachar theorizes a global condition of the “semicivilized” marked by nonsovereign futures, crippling debts, and the constant specter of violence exercised by those who call themselves civilized, inviting us to rethink catastrophe and potentiality in Cairo and the world today.
-      </p>
-
-      <LinkButton classes="mt-5" href="/publications#books">
-        More books
+      <div data-tina-field={tinaField(homePage, "bookDescription")} className="mt-5 flex flex-col gap-y-2">
+        <TinaMarkdown content={homePage.bookDescription} />
+      </div>
+      <LinkButton tinaField={tinaField(homePage, "bookButtonText")} classes="mt-5" href="/publications#books">
+        {homePage.bookButtonText}
       </LinkButton>
-
     </Book>
   );
 }
