@@ -11,6 +11,10 @@
     {
       "href": "/events",
       "text": "Events"
+    },
+    {
+      "href": "/contact",
+      "text": "Contact"
     }
   ]
 }

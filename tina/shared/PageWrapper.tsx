@@ -7,7 +7,7 @@ interface Props {
 
 export default function PageWrapper({ children }: Props) {
   return (
-    <Wrapper classes="py-8 md:py-12">
+    <Wrapper classes="py-10 md:py-16">
       {children}
     </Wrapper>
   );

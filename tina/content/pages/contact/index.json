@@ -1,0 +1,14 @@
+{
+  "head": {
+    "title": "Contact",
+    "description": "The contact page"
+  },
+  "h1": "Contact",
+  "officeAddressHeading": "Office Address",
+  "officeAddress": "Department of Anthropology\n\n130 Aaron Burr Hall\n\nPrinceton, NJ 08545\n",
+  "emailHeading": "Email",
+  "email": "elyachar@princeton.edu ",
+  "officePhoneHeading": "Office Phone",
+  "officePhone": "(609) 258-2896",
+  "officePhoneMachineReadable": "+16092582896"
+}

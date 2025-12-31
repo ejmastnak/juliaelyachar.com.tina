@@ -2,6 +2,7 @@ import { defineConfig } from "tinacms";
 import { HomePageCollection } from "@tina/collections/pages/home.ts";
 import { AboutPageCollection } from "@tina/collections/pages/about.ts";
 import { EventsPageCollection } from "@tina/collections/pages/events.ts";
+import { ContactPageCollection } from "@tina/collections/pages/contact.ts";
 import { NavCollection } from "@tina/collections/shared/nav.ts";
 import { FooterCollection } from "@tina/collections/shared/footer.ts";
 import { PublicationCategoryCollection } from "@tina/collections/shared/publicationCategory.ts";
@@ -38,6 +39,7 @@ export default defineConfig({
       HomePageCollection,
       AboutPageCollection,
       EventsPageCollection,
+      ContactPageCollection,
       PublicationCategoryCollection,
       PublicationCollection,
       EventCollection,
