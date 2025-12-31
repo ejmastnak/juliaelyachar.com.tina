@@ -1,6 +1,4 @@
 import { useTina, tinaField } from "tinacms/dist/react";
-import { TinaMarkdown } from "tinacms/dist/rich-text";
-import type { GetImageResult } from "astro";
 import Wrapper from '@tina/shared/Wrapper.tsx'
 import Hero from './partials/Hero.tsx'
 import Semicivilized from './partials/Semicivilized.tsx'

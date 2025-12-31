@@ -25,6 +25,9 @@ fragment MyAboutPageParts on AboutPage {
     description
   }
   h1
-  subtitle
+  summary
+  img
+  imgAlt
+  cvButtonText
   body
 }

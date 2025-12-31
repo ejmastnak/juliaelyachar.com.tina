@@ -1,12 +1,21 @@
 ---
 import client from "@tina/__generated__/client";
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import AboutPage from "@tina/pages/AboutPage.tsx";
+import About from "@tina/pages/About/Index.tsx";
+import { optimizeTinaImages } from '@/lib/optimizeTinaImages';
 
 const content = await client.queries.myAboutPage({ relativePath: "about.json" });
 const head = content.data.aboutPage.head;
+
+await optimizeTinaImages(content, [
+  {
+    srcPath: ['data', 'aboutPage', 'img'],
+    altPath: ['data', 'aboutPage', 'imgAlt'],
+    width: 700,
+  },
+]);
 ---
 
 <BaseLayout head={head}>
-  <AboutPage {...content} client:tina />
+  <About {...content} client:tina />
 </BaseLayout>
