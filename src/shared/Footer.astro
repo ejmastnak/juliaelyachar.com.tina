@@ -8,7 +8,7 @@ interface Props {
 }
 const { classes } = Astro.props as Props;
 
-const content = await client.queries.myFooter({ relativePath: "footer.json" });
+const content = await client.queries.myFooter({ relativePath: "index.json" });
 const footer = content.data.footer;
 ---
 

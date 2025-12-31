@@ -9,7 +9,7 @@ interface Props {
 }
 const { classes } = Astro.props as Props;
 
-const content = await client.queries.myNav({ relativePath: "nav.json" });
+const content = await client.queries.myNav({ relativePath: "index.json" });
 const nav = content.data.nav;
 ---
 

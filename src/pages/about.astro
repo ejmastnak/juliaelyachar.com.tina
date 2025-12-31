@@ -4,7 +4,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import About from "@tina/pages/About/Index.tsx";
 import { optimizeTinaImages } from '@/lib/optimizeTinaImages';
 
-const content = await client.queries.myAboutPage({ relativePath: "about.json" });
+const content = await client.queries.myAboutPage({ relativePath: "index.json" });
 const head = content.data.aboutPage.head;
 
 await optimizeTinaImages(content, [
