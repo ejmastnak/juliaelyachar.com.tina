@@ -1,0 +1,21 @@
+---
+import client from "@tina/__generated__/client";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Events from "@tina/pages/Events/Index.tsx";
+import { optimizeTinaImages } from '@/lib/optimizeTinaImages';
+
+const content = await client.queries.myEventsPage({ relativePath: "index.json" });
+const head = content.data.eventsPage.head;
+
+await optimizeTinaImages(content, [
+  {
+    srcPath: ['data', 'eventsPage', 'img'],
+    altPath: ['data', 'eventsPage', 'imgAlt'],
+    width: 700,
+  },
+]);
+---
+
+<BaseLayout head={head}>
+  <Events {...content} client:tina />
+</BaseLayout>

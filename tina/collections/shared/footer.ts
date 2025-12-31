@@ -26,11 +26,6 @@ export const FooterCollection: Collection = {
       type: "string",
     },
     {
-      name: "address",
-      label: "Address",
-      type: "rich-text",
-    },
-    {
       name: "footerLinks",
       label: "Footer Links",
       type: "object",
@@ -56,6 +51,11 @@ export const FooterCollection: Collection = {
           required: true,
         },
       ],
+    },
+    {
+      name: "address",
+      label: "Address",
+      type: "rich-text",
     }
   ],
 };

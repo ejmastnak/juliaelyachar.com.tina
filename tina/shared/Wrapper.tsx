@@ -7,7 +7,7 @@ interface Props {
 
 export default function Wrapper({ classes, children }: Props) {
   return (
-    <div className={`max-w-5xl mx-auto px-6 md:px-10 ${classes ? classes : ''}`} >
+    <div className={`max-w-6xl mx-auto px-6 md:px-10 ${classes ? classes : ''}`} >
       {children}
     </div>
   );

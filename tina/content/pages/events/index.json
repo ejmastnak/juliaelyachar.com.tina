@@ -1,0 +1,11 @@
+{
+  "head": {
+    "title": "Events",
+    "description": "The events page"
+  },
+  "h1": "Events",
+  "img": "/src/assets/img/uploads/classroom.jpg",
+  "imgAlt": "Image of Julia",
+  "upcomingEventsHeading": "Upcoming events",
+  "pastEventsHeading": "Past events"
+}
