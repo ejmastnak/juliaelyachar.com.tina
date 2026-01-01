@@ -1,0 +1,47 @@
+query myTeachingPage($relativePath: String!) {
+  teachingPage(relativePath: $relativePath) {
+    ... on Document {
+      _sys {
+        filename
+        basename
+        hasReferences
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+      _values
+    }
+    ...MyTeachingPageParts
+  }
+}
+
+fragment MyTeachingPageParts on TeachingPage {
+  __typename
+  head {
+    __typename
+    title
+    description
+  }
+  h1
+  description
+  press
+  coursesTaughtHeading
+  syllabusAvailability
+  princetonCoursesHeading
+  princetonCourses {
+    __typename
+    name
+  }
+  uciCoursesHeading
+  uciCourses {
+    __typename
+    name
+  }
+  nyuCoursesHeading
+  nyuCourses {
+    __typename
+    name
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "head": {
+    "title": "Teaching",
+    "description": "The teaching page"
+  },
+  "h1": "Teaching",
+  "description": "Like her writing, Elyachar’s teaching brings together issues of the day with their long histories in new and distinct fashion. Elyachar’s classes on Debt and what she called “Empires of Debt” have attracted attention around the world. A tweet in which she posted her syllabus about “Empires of Debt” quickly reached over 200,000 views. This class drew on anthropology, history, and finance to understand the role of debt in the making of empires, the creation of dependency, the forging of interdependency, and the shaping of economic life in 2023. More and more, young people want to see how economic issues of our own times are entangled with legacies of enslavement and internal colonialism; they want analytic tools to rethink the world. Addressing this need is a key mission for Elyachar in her teaching.\n",
+  "press": "Princeton Office of Communications on Elyachar's *Debt* course: [Class Snapshot: “Debt”](https://www.princeton.edu/news/2018/11/29/class-snapshot-debt)\n",
+  "coursesTaughtHeading": "Courses Taught",
+  "syllabusAvailability": "Syllabi available upon request.",
+  "princetonCoursesHeading": "Princeton University",
+  "princetonCourses": [
+    { "name": "Proseminar in Anthropological Theory" },
+    { "name": "Anthropology of Debt" },
+    { "name": "Anthropology of Infrastructure" },
+    { "name": "Economic Anthropology" },
+    { "name": "Readings in History of Anthropological Theory" },
+    { "name": "Economic Anthropology(Fall 2025)" },
+    { "name": "Empires of Debt" },
+    { "name": "Histories of Anthropological Theory" },
+    { "name": "Postcolonialism: Theories and Critiques" },
+    { "name": "Revolt" },
+    { "name": "Alternative Economies: Before (and After) Growth" },
+    { "name": "Postcolonialism without Colony" },
+    { "name": "Debt" }
+  ],
+  "uciCoursesHeading": "University of California, Irvine",
+  "uciCourses": [
+    { "name": "Proseminar in Anthropology" },
+    { "name": "The Anthropology of Value" },
+    { "name": "Anthropology of Infrastructure" },
+    { "name": "Ethnography of Archives" },
+    { "name": "Theories of Property" },
+    { "name": "Alternative Economies" },
+    { "name": "Anthropology of Nature" },
+    { "name": "NGOs: History, Management, and Knowledge Practices" },
+    { "name": "Economic Anthropology" },
+    { "name": "The Evil Eye, Folklore, and the Mediterranean" }
+  ],
+  "nyuCoursesHeading": "New York University",
+  "nyuCourses": [
+    { "name": "Topics in Economic Anthropology of the Middle East: Markets, Value, Property" },
+    { "name": "Property, Culture, and Power in the Middle East" }
+  ]
+}

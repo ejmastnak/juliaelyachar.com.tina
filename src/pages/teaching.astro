@@ -1,0 +1,12 @@
+---
+import client from "@tina/__generated__/client";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Teaching from "@tina/pages/Teaching/Index.tsx";
+
+const content = await client.queries.myTeachingPage({ relativePath: "index.json" });
+const head = content.data.teachingPage.head;
+---
+
+<BaseLayout head={head}>
+  <Teaching {...content} client:tina />
+</BaseLayout>
