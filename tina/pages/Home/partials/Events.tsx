@@ -1,24 +1,26 @@
 import { tinaField } from "tinacms/dist/react";
-import type { HomePageQuery } from "@tina/__generated__/types";
+import type { MyHomePageQuery, MyEventQuery, } from "@tina/__generated__/types";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import LinkButton from '@tina/components/LinkButton.tsx'
 import Event from '@tina/components/Event.tsx'
-import client from "@tina/__generated__/client";
 
 type Props = {
-  homePage: HomePageQuery
+  homePage: MyHomePageQuery
+  eventsData: MyEventQuery
 };
 
-const eventsEnvelope = await client.queries.myEvent({ relativePath: "index.json" });
-const events = eventsEnvelope.data.event.events;
+export default function About({ homePage, eventsData }: Props) {
 
-const today = new Date()
-const N = 2
+  const events = eventsData.event.events;
 
-const upcomingEvents = events.filter(e => new Date(e.date) >= today).sort((a, b) => a.date >= b.date ? 1 : -1);
-const pastEvents = events.filter(e => new Date(e.date) < today).sort((a, b) => a.date < b.date ? 1 : -1);
+  const today = new Date()
+  const N = 2
 
-export default function About({ homePage }: Props) {
+  const upcomingEvents = events.filter(e => new Date(e.date) >= today).sort((a, b) => a.date >= b.date ? 1 : -1);
+  const pastEvents = events.filter(e => new Date(e.date) < today).sort((a, b) => a.date < b.date ? 1 : -1);
+
+
+
   return (
     <div>
 

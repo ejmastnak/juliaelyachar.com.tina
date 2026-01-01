@@ -3,10 +3,10 @@ import LinkButton from '@tina/components/LinkButton.tsx'
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import PageWrapper from '@tina/shared/PageWrapper.tsx'
 
-import type { AboutPageQuery, AboutPageQueryVariables } from "@tina/__generated__/types";
+import type { MyAboutPageQuery, MyAboutPageQueryVariables } from "@tina/__generated__/types";
 type Props = {
-  variables: AboutPageQueryVariables;
-  data: AboutPageQuery;
+  variables: MyAboutPageQueryVariables;
+  data: MyAboutPageQuery;
   query: string;
 };
 

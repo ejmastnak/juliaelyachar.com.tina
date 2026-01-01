@@ -5,6 +5,9 @@ import Home from "@tina/pages/Home/Index.tsx";
 import { optimizeTinaImages } from '@/lib/optimizeTinaImages';
 
 const content = await client.queries.myHomePage({ relativePath: "index.json" });
+const events = await client.queries.myEvent({ relativePath: "index.json" });
+const publications = await client.queries.myPublication({ relativePath: "index.json" });
+
 const head = content.data.homePage.head;
 
 await optimizeTinaImages(content, [
@@ -22,5 +25,5 @@ await optimizeTinaImages(content, [
 ---
 
 <BaseLayout head={head}>
-  <Home {...content} client:tina />
+  <Home {...content} eventsData={events.data} publicationsData={publications.data} client:tina />
 </BaseLayout>

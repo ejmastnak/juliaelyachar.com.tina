@@ -1,25 +1,16 @@
 import { useTina, tinaField } from "tinacms/dist/react";
-import client from "@tina/__generated__/client";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
-import type { EventsPageQuery, EventsPageQueryVariables } from "@tina/__generated__/types";
+import type { MyEventsPageQuery, MyEventsPageQueryVariables, MyEventQuery } from "@tina/__generated__/types";
 import PageWrapper from '@tina/shared/PageWrapper.tsx'
 import LinkButton from '@tina/components/LinkButton.tsx'
 import Event from '@tina/components/Event.tsx'
 
 type Props = {
-  variables: EventsPageQueryVariables;
-  data: EventsPageQuery;
+  variables: MyEventsPageQueryVariables;
+  data: MyEventsPageQuery;
   query: string;
+  eventsData: MyEventQuery;
 };
-
-const eventsEnvelope = await client.queries.myEvent({ relativePath: "index.json" });
-const events = eventsEnvelope.data.event.events;
-
-const today = new Date()
-const N = 2
-
-const upcomingEvents = events.filter(e => new Date(e.date) >= today).sort((a, b) => a.date >= b.date ? 1 : -1);
-const pastEvents = events.filter(e => new Date(e.date) < today).sort((a, b) => a.date < b.date ? 1 : -1);
 
 export default function EventsPage(props: Props) {
   const { data } = useTina({
@@ -28,6 +19,14 @@ export default function EventsPage(props: Props) {
     data: props.data,
   });
   const eventsPage = data.eventsPage;
+
+  const events = props.eventsData.event.events;
+
+  const today = new Date()
+  const N = 2
+
+  const upcomingEvents = events.filter(e => new Date(e.date) >= today).sort((a, b) => a.date >= b.date ? 1 : -1);
+  const pastEvents = events.filter(e => new Date(e.date) < today).sort((a, b) => a.date < b.date ? 1 : -1);
 
   return (
     <PageWrapper>

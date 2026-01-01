@@ -2,10 +2,10 @@ import { useTina, tinaField } from "tinacms/dist/react";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import PageWrapper from '@tina/shared/PageWrapper.tsx'
 
-import type { ContactPageQuery, ContactPageQueryVariables } from "@tina/__generated__/types";
+import type { MyContactPageQuery, MyContactPageQueryVariables } from "@tina/__generated__/types";
 type Props = {
-  variables: ContactPageQueryVariables;
-  data: ContactPageQuery;
+  variables: MyContactPageQueryVariables;
+  data: MyContactPageQuery;
   query: string;
 };
 
