@@ -3,7 +3,7 @@ import type { Collection } from "tinacms";
 export const PublicationCollection: Collection = {
 
   name: "publication",
-  label: "Publications",
+  label: "Articles and Chapters",
   path: "tina/content/shared/publication",
   format: "json",
 
@@ -20,8 +20,9 @@ export const PublicationCollection: Collection = {
       label: "Publications",
       type: "object",
       list: true,
-      itemProps: (item) => {
-        return { label: item?.citation };
+      itemProps: (publication) => {
+        // Joins MD nodes into a string
+        return { label: publication.citation?.children[0]?.children.map(item => item.text ? item.text : '').join(' ') };
       },
       defaultItem: {
         citation: "“Markets, Morality, and the State.” *Example Journal of Social Theory* 12, no. 2 (April 2018): 123–45.",
