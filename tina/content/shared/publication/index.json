@@ -5,6 +5,7 @@
       "category": "tina/content/shared/publicationCategory/ngos.json",
       "type": "article",
       "img": "/src/assets/img/uploads/publications/international-encyclopedia-of-the-social-and-behavioral-sciences.jpg",
+      "imgAlt": "Cover of International Encyclopedia of the Social and Behavioral Sciences",
       "href": "https://www.researchgate.net/publication/304190799_Nongovernmental_Organizations_Anthropological_and_Historical_Aspects",
       "featured": false
     },
@@ -13,6 +14,7 @@
       "category": "tina/content/shared/publicationCategory/ngos.json",
       "type": "article",
       "img": "/src/assets/img/uploads/publications/comparative-studies-in-society-and-history.jpg",
+      "imgAlt": "Cover of Comparative Studies in Society and History",
       "href": "https://www.jstor.org/stable/3879462",
       "featured": false
     },
@@ -21,6 +23,7 @@
       "category": "tina/content/shared/publicationCategory/ngos.json",
       "type": "article",
       "img": "/src/assets/img/uploads/publications/public-culture.jpg",
+      "imgAlt": "Cover of Public Culture",
       "href": "https://muse.jhu.edu/pub/4/article/26292/pdf",
       "featured": false
     },
@@ -29,6 +32,7 @@
       "category": "tina/content/shared/publicationCategory/ngos.json",
       "type": "article",
       "img": "/src/assets/img/uploads/publications/critique-internationale.jpg",
+      "imgAlt": "Cover of Critique Internationale",
       "href": "https://shs.cairn.info/revue-critique-internationale-2001-4-page-139?lang=fr",
       "featured": false
     },
@@ -37,6 +41,7 @@
       "category": "tina/content/shared/publicationCategory/ngos.json",
       "type": "article",
       "img": "/src/assets/img/uploads/publications/anthropological-notebooks.jpg",
+      "imgAlt": "Cover of Anthropological Notebooks (Drustva antropologov Slovenije)",
       "href": "https://anthropological-notebooks.zrc-sazu.si/Notebooks/article/view/476",
       "featured": false
     },
@@ -48,6 +53,7 @@
       "category": "tina/content/shared/publicationCategory/politicalEconomy.json",
       "type": "article",
       "img": "/src/assets/img/uploads/publications/current-anthropology.jpg",
+      "imgAlt": "Cover of Current Anthropology",
       "href": "https://www.journals.uchicago.edu/doi/full/10.1086/734215",
       "featured": true
     },
@@ -56,6 +62,7 @@
       "category": "tina/content/shared/publicationCategory/politicalEconomy.json",
       "type": "article",
       "img": "/src/assets/img/uploads/publications/journal-of-cultural-economy.jpg",
+      "imgAlt": "Cover of Journal of Cultural Economy",
       "href": "https://www.tandfonline.com/doi/full/10.1080/17530350.2023.2189146",
       "featured": false
     },
@@ -64,6 +71,7 @@
       "category": "tina/content/shared/publicationCategory/politicalEconomy.json",
       "type": "article",
       "img": "/src/assets/img/uploads/publications/cultural-anthropology.jpg",
+      "imgAlt": "Cover of Cultural Anthropology",
       "href": "https://anthrosource.onlinelibrary.wiley.com/doi/full/10.1111/j.1548-1360.2012.01127.x",
       "featured": false
     },
@@ -72,6 +80,7 @@
       "category": "tina/content/shared/publicationCategory/politicalEconomy.json",
       "type": "chapter",
       "img": "/src/assets/img/uploads/publications/mutant-neoliberalism.jpg",
+      "imgAlt": "Cover of Mutatant Neoliberalism",
       "href": "https://academic.oup.com/fordham-scholarship-online/book/30820/chapter-abstract/262437051",
       "featured": true
     },
@@ -80,6 +89,7 @@
       "category": "tina/content/shared/publicationCategory/politicalEconomy.json",
       "type": "article",
       "img": "/src/assets/img/uploads/publications/companion-to-the-anthropology-of-the-middle-east.jpg",
+      "imgAlt": "Cover of A Companion to the Anthropology of the Middle East",
       "href": "https://onlinelibrary.wiley.com/doi/10.1002/9781118475683.ch21",
       "featured": false
     },
@@ -91,6 +101,7 @@
       "category": "tina/content/shared/publicationCategory/banking.json",
       "type": "article",
       "img": "/src/assets/img/uploads/publications/journal-of-cultural-economy.jpg",
+      "imgAlt": "Cover of Journal of Cultural Economy",
       "href": "https://www.tandfonline.com/doi/full/10.1080/17530350.2023.2189146",
       "featured": true
     },
@@ -99,6 +110,7 @@
       "category": "tina/content/shared/publicationCategory/banking.json",
       "type": "article",
       "img": null,
+      "imgAlt": null,
       "href": "https://www.researchgate.net/publication/316732643_2_Morals_and_Emotions_of_Money_Explaining_How_Money_Really_Works",
       "featured": false
     },
@@ -107,6 +119,7 @@
       "category": "tina/content/shared/publicationCategory/banking.json",
       "type": "article",
       "img": null,
+      "imgAlt": null,
       "href": "https://escholarship.org/content/qt77f5c1r8/qt77f5c1r8.pdf",
       "featured": false
     },
@@ -115,6 +128,7 @@
       "category": "tina/content/shared/publicationCategory/banking.json",
       "type": "article",
       "img": null,
+      "imgAlt": null,
       "href": "https://valuationstudies.liu.se/article/view/761/341",
       "featured": false
     },
@@ -126,6 +140,7 @@
       "category": "tina/content/shared/publicationCategory/neoliberalism.json",
       "type": "article",
       "img": "/src/assets/img/uploads/publications/public-culture.jpg",
+      "imgAlt": "Cover of Public Culture",
       "href": "https://muse.jhu.edu/article/26292/summary",
       "featured": false
     },
@@ -134,6 +149,7 @@
       "category": "tina/content/shared/publicationCategory/neoliberalism.json",
       "type": "chapter",
       "img": "/src/assets/img/uploads/publications/mutant-neoliberalism.jpg",
+      "imgAlt": "Cover of Mutatant Neoliberalism",
       "href": "https://academic.oup.com/fordham-scholarship-online/book/30820/chapter-abstract/262437051?redirectedFrom=fulltext",
       "featured": false
     },
@@ -142,6 +158,7 @@
       "category": "tina/content/shared/publicationCategory/neoliberalism.json",
       "type": "article",
       "img": "/src/assets/img/uploads/publications/companion-to-the-anthropology-of-the-middle-east.jpg",
+      "imgAlt": "Cover of A Companion to the Anthropology of the Middle East",
       "href": "https://onlinelibrary.wiley.com/doi/10.1002/9781118475683.ch21",
       "featured": false
     },
@@ -152,6 +169,7 @@
       "category": "tina/content/shared/publicationCategory/proprioception.json",
       "type": "article",
       "img": "/src/assets/img/uploads/publications/american-anthropologist.jpg",
+      "imgAlt": "Cover of American Anthropologist",
       "href": "https://anthrosource.onlinelibrary.wiley.com/doi/abs/10.1111/aman.13760",
       "featured": true
     },
@@ -160,6 +178,7 @@
       "category": "tina/content/shared/publicationCategory/proprioception.json",
       "type": "article",
       "img": null,
+      "imgAlt": null,
       "href": "https://anthrosource.onlinelibrary.wiley.com/doi/abs/10.1111/j.1548-1425.2010.01265.x",
       "featured": false
     },
@@ -171,6 +190,7 @@
       "category": "tina/content/shared/publicationCategory/infrastructure.json",
       "type": "article",
       "img": "/src/assets/img/uploads/publications/thinking-infrastructures.jpg",
+      "imgAlt": "Cover of Thinking Infrastructures",
       "href": "https://www.emerald.com/books/edited-volume/10427/Thinking-Infrastructures",
       "featured": false
     },
@@ -179,6 +199,7 @@
       "category": "tina/content/shared/publicationCategory/infrastructure.json",
       "type": "article",
       "img": "/src/assets/img/uploads/publications/distributed-agency.jpg",
+      "imgAlt": "Cover of Distributed Agency",
       "href": "https://academic.oup.com/book/2078/chapter-abstract/141995027?redirectedFrom=fulltext",
       "featured": true
     },
@@ -190,6 +211,7 @@
       "category": "tina/content/shared/publicationCategory/palestine.json",
       "type": "chapter",
       "img": "/src/assets/img/uploads/publications/naseej.jpg",
+      "imgAlt": "Cover of Naseej, Life-Weavings of Palestine",
       "href": "https://www.plutobooks.com/9780745350844/naseej/",
       "featured": true
     },
@@ -198,6 +220,7 @@
       "category": "tina/content/shared/publicationCategory/palestine.json",
       "type": "article",
       "img": null,
+      "imgAlt": null,
       "href": "https://forward.com/opinion/468359/palestinians-east-jerusalem-eviction-sheikh-jarrah/",
       "featured": false
     },
@@ -206,6 +229,7 @@
       "category": "tina/content/shared/publicationCategory/palestine.json",
       "type": "article",
       "img": null,
+      "imgAlt": null,
       "href": "https://mondoweiss.net/2023/06/for-anthropology-decolonizing-knowledge-means-supporting-the-academic-boycott-of-israel/",
       "featured": false
     }

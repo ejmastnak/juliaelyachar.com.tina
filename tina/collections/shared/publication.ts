@@ -58,6 +58,11 @@ export const PublicationCollection: Collection = {
           type: 'image',
         },
         {
+          name: 'imgAlt',
+          label: 'Image alt text',
+          type: 'string',
+        },
+        {
           name: 'href',
           label: 'Link',
           type: 'string',

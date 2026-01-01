@@ -10,6 +10,8 @@ const publications = await client.queries.myPublication({ relativePath: "index.j
 
 const head = content.data.homePage.head;
 
+// filter((publication) => publication.featured)
+
 await optimizeTinaImages(content, [
   {
     srcPath: ['data', 'homePage', 'heroImg'],
@@ -22,6 +24,21 @@ await optimizeTinaImages(content, [
     width: 800,
   },
 ]);
+
+// Optimize the images in displayed publications
+const publicationImagesToOptimize = publications.data.publication.publications.reduce((acc, publication, idx) => {
+  if (publication.featured) {
+    acc.push({
+      srcPath: ['data', 'publication', 'publications', `${idx}`, 'img'],
+      altPath: ['data', 'publication', 'publications', `${idx}`, 'imgAlt'],
+      width: 512,
+      idx: idx,
+    });
+  }
+  return acc;
+}, []);
+await optimizeTinaImages(publications, publicationImagesToOptimize);
+
 ---
 
 <BaseLayout head={head}>
