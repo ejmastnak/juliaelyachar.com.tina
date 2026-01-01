@@ -1,0 +1,18 @@
+---
+import client from "@tina/__generated__/client";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Publications from "@tina/pages/Publications/Index.tsx";
+
+const content = await client.queries.myPublicationsPage({ relativePath: "index.json" });
+const head = content.data.publicationsPage.head;
+
+const publications = await client.queries.myPublication({ relativePath: "index.json" });
+const markets = await client.queries.book({ relativePath: "markets-of-dispossession.json" });
+const semicivilized = await client.queries.book({ relativePath: "on-the-semicivilized.json" });
+const infrastructures = await client.queries.book({ relativePath: "thinking-infrastructures.json" });
+
+---
+
+<BaseLayout head={head}>
+  <Publications {...content} publications={publications.data.publication.publications} markets={markets.data.book} semicivilized={semicivilized.data.book} infrastructures={infrastructures.data.book} client:tina />
+</BaseLayout>

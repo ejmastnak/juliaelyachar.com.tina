@@ -8,7 +8,7 @@ export const TeachingPageCollection: Collection = {
   format: "json",
 
   ui: {
-    router: () => "/teaching",
+    router: () => "/teaching/",
     allowedActions: {
       create: false,
       delete: false,

@@ -26,7 +26,7 @@ export default function Book({ img, imgAlt, imgClasses, title, subtitle, href, r
               ? <a href={href} className=""><h2 data-tina-field={titleTinaField} className="text-3xl font-semibold hover:underline">{title}</h2></a> 
               : <h2 data-tina-field={titleTinaField} className="text-3xl font-semibold">{title}</h2>
           }
-          <p data-tina-field={subtitleTinaField} className="mt-1">{subtitle}</p>
+          <p data-tina-field={subtitleTinaField} className="mt-1 text-gray-800">{subtitle}</p>
         </div>
 
         <div className="mx-auto w-fit my-6 md:my-0 ">
@@ -44,7 +44,7 @@ export default function Book({ img, imgAlt, imgClasses, title, subtitle, href, r
                 ? <a href={href}><h2 data-tina-field={titleTinaField} className="text-3xl font-semibold hover:underline">{title}</h2></a>
                 : <h2 data-tina-field={titleTinaField} className="text-3xl font-semibold">{title}</h2>
             }
-            <p data-tina-field={subtitleTinaField} className="mt-1">{subtitle}</p>
+            <p data-tina-field={subtitleTinaField} className="mt-1 text-gray-800">{subtitle}</p>
           </div>
           <div className="mt-5">
             {children}

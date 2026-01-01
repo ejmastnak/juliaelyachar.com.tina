@@ -1,0 +1,12 @@
+---
+import client from "@tina/__generated__/client";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Book from "@tina/pages/Publications/Book.tsx";
+
+const content = await client.queries.book({ relativePath: "markets-of-dispossession.json" });
+const head = content.data.book.head;
+---
+
+<BaseLayout head={head}>
+  <Book {...content} client:tina />
+</BaseLayout>

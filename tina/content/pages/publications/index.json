@@ -1,0 +1,9 @@
+{
+  "head": {
+    "title": "Publications",
+    "description": "The publications page"
+  },
+  "booksHeading": "Books",
+  "articlesHeading": "Selected articles and chapters",
+  "cv": "[See my CV](/julia-elyachar-cv.pdf) for a full list of articles, chapters in edited volumes, collections, and other publications."
+}

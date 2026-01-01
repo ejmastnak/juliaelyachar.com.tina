@@ -4,10 +4,12 @@ import { AboutPageCollection } from "@tina/collections/pages/about.ts";
 import { EventsPageCollection } from "@tina/collections/pages/events.ts";
 import { TeachingPageCollection } from "@tina/collections/pages/teaching.ts";
 import { ContactPageCollection } from "@tina/collections/pages/contact.ts";
+import { PublicationsPageCollection } from "@tina/collections/pages/publications.ts";
 import { NavCollection } from "@tina/collections/shared/nav.ts";
 import { FooterCollection } from "@tina/collections/shared/footer.ts";
 import { PublicationCategoryCollection } from "@tina/collections/shared/publicationCategory.ts";
 import { PublicationCollection } from "@tina/collections/shared/publication.ts";
+import { BookCollection } from "@tina/collections/shared/book.ts";
 import { EventCollection } from "@tina/collections/shared/event.ts";
 
 import { TINA_MEDIA_ROOT, TINA_PUBLIC_FOLDER, TINA_SUPPORTED_IMAGE_MIMES } from "@src/assets/config.ts";
@@ -35,15 +37,17 @@ export default defineConfig({
   },
   schema: {
     collections: [
-      NavCollection,
-      FooterCollection,
       HomePageCollection,
       AboutPageCollection,
+      PublicationsPageCollection,
       EventsPageCollection,
       TeachingPageCollection,
       ContactPageCollection,
+      NavCollection,
+      FooterCollection,
       PublicationCategoryCollection,
       PublicationCollection,
+      BookCollection,
       EventCollection,
     ],
   },

@@ -1,0 +1,30 @@
+query myPublicationsPage($relativePath: String!) {
+  publicationsPage(relativePath: $relativePath) {
+    ... on Document {
+      _sys {
+        filename
+        basename
+        hasReferences
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+      _values
+    }
+    ...MyPublicationsPageParts
+  }
+}
+
+fragment MyPublicationsPageParts on PublicationsPage {
+  __typename
+  head {
+    __typename
+    title
+    description
+  }
+  booksHeading
+  articlesHeading
+  cv
+}
