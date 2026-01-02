@@ -1,0 +1,32 @@
+{
+  "title": "Morals and Emotions of Money",
+  "type": "Chapter",
+  "authors": [
+    { "givenName": "Julia", "familyName": "Elyachar" },
+    { "givenName": "Nina", "familyName": "Bandelj" },
+    { "givenName": "Tyler", "familyName": "Boston" },
+    { "givenName": "Julie", "familyName": "Kim" },
+    { "givenName": "Michael", "familyName": "McBride" },
+    { "givenName": "Zaibu", "familyName": "Tufail" },
+    { "givenName": "James Owen", "familyName": "Weatherall" }
+  ],
+  "editors": [],
+  "containerTitle": "Money Talks: Explaining how Money Really Works",
+  "publisher": "Princeton University Press",
+  "publisherPlace": "Princeton",
+  "volume": "",
+  "edition": "",
+  "issue": "",
+  "pages": "",
+  "year": "2017",
+  "month": "",
+  "categories": [
+    {
+      "category": "tina/content/publicationCategory/banking.json"
+    }
+  ],
+  "img": null,
+  "imgAlt": null,
+  "href": "https://www.researchgate.net/publication/316732643_2_Morals_and_Emotions_of_Money_Explaining_How_Money_Really_Works",
+  "featured": false
+}

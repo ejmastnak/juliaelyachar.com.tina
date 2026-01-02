@@ -1,0 +1,30 @@
+{
+  "title": "Neoliberalism and the Savage Slot: Rationality, Irrationality, and Calculating Value 1920–2020",
+  "type": "Chapter",
+  "authors": [{ "givenName": "Julia", "familyName": "Elyachar" }],
+  "editors": [
+    { "givenName": "William", "familyName": "Callison" },
+    { "givenName": "Zachary", "familyName": "Manfredi" }
+  ],
+  "containerTitle": "The Neoliberal Present? Political Economies in Flux",
+  "publisher": "Fordham University Press",
+  "publisherPlace": "",
+  "volume": "",
+  "edition": "",
+  "issue": "",
+  "pages": "177–195",
+  "year": "2019",
+  "month": "",
+  "categories": [
+    {
+      "category": "tina/content/publicationCategory/politicalEconomy.json"
+    },
+    {
+      "category": "tina/content/publicationCategory/neoliberalism.json"
+    }
+  ],
+  "img": "/src/assets/img/uploads/publications/mutant-neoliberalism.jpg",
+  "imgAlt": "Cover of Mutatant Neoliberalism",
+  "href": "https://academic.oup.com/fordham-scholarship-online/book/30820/chapter-abstract/262437051",
+  "featured": true
+}

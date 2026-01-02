@@ -1,0 +1,24 @@
+{
+  "title": "NGOs: Anthropological and Historical Aspects",
+  "type": "Encyclopedia entry",
+  "authors": [{ "givenName": "Julia", "familyName": "Elyachar" }],
+  "editors": [],
+  "containerTitle": "International Encyclopedia of the Social and Behavioral Sciences",
+  "publisher": "",
+  "publisherPlace": "",
+  "volume": "",
+  "edition": "2nd ed.",
+  "issue": "",
+  "pages": "",
+  "year": "2015",
+  "month": "December",
+  "categories": [
+    {
+      "category": "tina/content/publicationCategory/ngos.json"
+    }
+  ],
+  "img": "/src/assets/img/uploads/publications/international-encyclopedia-of-the-social-and-behavioral-sciences.jpg",
+  "imgAlt": "Cover of International Encyclopedia of the Social and Behavioral Sciences",
+  "href": "https://www.researchgate.net/publication/304190799_Nongovernmental_Organizations_Anthropological_and_Historical_Aspects",
+  "featured": false
+}

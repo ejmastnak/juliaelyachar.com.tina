@@ -1,0 +1,27 @@
+{
+  "title": "They Tell Me This Is Jerusalem: Grammars of Belonging in Palestine",
+  "type": "Chapter",
+  "authors": [{ "givenName": "Julia", "familyName": "Elyachar" }],
+  "editors": [
+    { "givenName": "Arpan", "familyName": "Roy" },
+    { "givenName": "Noura", "familyName": "Salahaldeen" }
+  ],
+  "containerTitle": "Naseej, Life-Weavings of Palestine",
+  "publisher": "Pluto Press",
+  "publisherPlace": "",
+  "volume": "",
+  "edition": "",
+  "issue": "",
+  "pages": "",
+  "year": "2024",
+  "month": "",
+  "categories": [
+    {
+      "category": "tina/content/publicationCategory/palestine.json"
+    }
+  ],
+  "img": "/src/assets/img/uploads/publications/naseej.jpg",
+  "imgAlt": "Cover of Naseej, Life-Weavings of Palestine",
+  "href": "https://www.plutobooks.com/9780745350844/naseej/",
+  "featured": true
+}

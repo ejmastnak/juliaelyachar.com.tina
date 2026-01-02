@@ -1,0 +1,24 @@
+{
+  "title": "Anthropology of Proprioception: Endurance and Collectivity on Unstable Grounds in Post-Revolutionary Cairo",
+  "type": "Journal article",
+  "authors": [{ "givenName": "Julia", "familyName": "Elyachar" }],
+  "editors": [],
+  "containerTitle": "American Anthropologist",
+  "publisher": "",
+  "publisherPlace": "",
+  "volume": "124",
+  "edition": "",
+  "issue": "3",
+  "pages": "525–535",
+  "year": "2022",
+  "month": "September",
+  "categories": [
+    {
+      "category": "tina/content/publicationCategory/proprioception.json"
+    }
+  ],
+  "img": "/src/assets/img/uploads/publications/american-anthropologist.jpg",
+  "imgAlt": "Cover of American Anthropologist",
+  "href": "https://anthrosource.onlinelibrary.wiley.com/doi/abs/10.1111/aman.13760",
+  "featured": true
+}

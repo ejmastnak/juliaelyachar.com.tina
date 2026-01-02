@@ -1,0 +1,24 @@
+{
+  "title": "They’re Palestinians Facing Eviction in East Jerusalem. They May Have Helped Save My Family",
+  "type": "Popular press article",
+  "authors": [{ "givenName": "Julia", "familyName": "Elyachar" }],
+  "editors": [],
+  "containerTitle": "Forward",
+  "publisher": "",
+  "publisherPlace": "",
+  "volume": "",
+  "edition": "",
+  "issue": "",
+  "pages": "",
+  "year": "2021",
+  "month": "April",
+  "categories": [
+    {
+      "category": "tina/content/publicationCategory/palestine.json"
+    }
+  ],
+  "img": null,
+  "imgAlt": null,
+  "href": "https://forward.com/opinion/468359/palestinians-east-jerusalem-eviction-sheikh-jarrah/",
+  "featured": false
+}

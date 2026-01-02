@@ -1,0 +1,30 @@
+{
+  "title": "Thinking Infrastructures: Introduction",
+  "type": "Chapter",
+  "authors": [],
+  "editors": [
+    { "givenName": "Julia", "familyName": "Elyachar" },
+    { "givenName": "Martin", "familyName": "Kornberger" },
+    { "givenName": "Neil", "familyName": "Pollock" },
+    { "givenName": "Geoffrey", "familyName": "Bowker" },
+    { "givenName": "Joanne", "familyName": "Nucho" }
+  ],
+  "containerTitle": "Thinking Infrastructures",
+  "publisher": "Emerald Publishing Limited",
+  "publisherPlace": "",
+  "volume": "62",
+  "edition": "",
+  "issue": "",
+  "pages": "",
+  "year": "2019",
+  "month": "",
+  "categories": [
+    {
+      "category": "tina/content/publicationCategory/infrastructure.json"
+    }
+  ],
+  "img": "/src/assets/img/uploads/publications/thinking-infrastructures.jpg",
+  "imgAlt": "Cover of Thinking Infrastructures",
+  "href": "https://www.emerald.com/books/edited-volume/10427/Thinking-Infrastructures",
+  "featured": false
+}

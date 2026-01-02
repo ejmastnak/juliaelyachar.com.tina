@@ -1,0 +1,32 @@
+{
+  "title": "Empowerment Money: The World Bank, Non-Governmental Organizations, and the Value of Culture in Egypt",
+  "type": "Journal article",
+  "authors": [
+    {
+      "givenName": "Julia",
+      "familyName": "Elyachar"
+    }
+  ],
+  "editors": [],
+  "containerTitle": "Public Culture",
+  "publisher": "",
+  "publisherPlace": "",
+  "edition": "",
+  "volume": "14",
+  "issue": "3",
+  "pages": "493–514",
+  "month": "Fall",
+  "year": "2002",
+  "categories": [
+    {
+      "category": "tina/content/publicationCategory/ngos.json"
+    },
+    {
+      "category": "tina/content/publicationCategory/neoliberalism.json"
+    }
+  ],
+  "img": "/src/assets/img/uploads/publications/public-culture.jpg",
+  "imgAlt": "Cover of Public Culture",
+  "href": "https://muse.jhu.edu/article/26292/summary",
+  "featured": false
+}

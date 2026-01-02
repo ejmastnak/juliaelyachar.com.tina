@@ -1,0 +1,29 @@
+{
+  "title": "Comprehending and Regulating Financial Crisis",
+  "type": "Journal article",
+  "authors": [
+    { "givenName": "Julia", "familyName": "Elyachar" },
+    { "givenName": "Nina", "familyName": "Bandelj" },
+    { "givenName": "Gary", "familyName": "Richardson" },
+    { "givenName": "James Owen", "familyName": "Weatherall" }
+  ],
+  "editors": [],
+  "containerTitle": "Perspectives on Science",
+  "publisher": "",
+  "publisherPlace": "",
+  "volume": "24",
+  "edition": "",
+  "issue": "4",
+  "pages": "443–473",
+  "year": "2016",
+  "month": "July–August",
+  "categories": [
+    {
+      "category": "tina/content/publicationCategory/banking.json"
+    }
+  ],
+  "img": null,
+  "imgAlt": null,
+  "href": "https://escholarship.org/content/qt77f5c1r8/qt77f5c1r8.pdf",
+  "featured": false
+}

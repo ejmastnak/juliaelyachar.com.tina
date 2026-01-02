@@ -10,7 +10,7 @@ type Props = {
   variables: MyPublicationsPageQueryVariables;
   data: MyPublicationsPageQuery;
   query: string;
-  publications: Publication;
+  publications: Array<Publication>;
   semicivilized: BookType;
   markets: BookType;
   infrastructures: BookType;
@@ -44,22 +44,27 @@ export default function PublicationsPage(props: Props) {
       // ...
     ]
   */
-  const categorizedPublications = Array.from(
-    props.publications.reduce((map, publication) => {
-      const { id, name } = publication.category
-
-      if (!map.has(id)) {
-        map.set(id, {
-          id,
-          name,
-          publications: []
-        })
+  function groupPublicationsByCategory(publications) {
+    const byCategory = {};
+    for (const publication of publications) {
+      for (const { category } of publication.categories) {
+        const { id, name } = category;
+        if (!byCategory[id]) {
+          byCategory[id] = {
+            id,
+            name,
+            publications: []
+          };
+        }
+        byCategory[id].publications.push(publication);
       }
+    }
+    return Object.values(byCategory).sort((a, b) =>
+      a.name.localeCompare(b.name)
+    );
+  }
+  const publicationsByCategory = groupPublicationsByCategory(props.publications);
 
-      map.get(id).publications.push(publication)
-      return map
-    }, new Map()).values()
-  )
 
   return (
     <PageWrapper>
@@ -129,7 +134,7 @@ export default function PublicationsPage(props: Props) {
 
       {/* List of publications */}
       <div className="flex flex-col gap-y-10 divide-y divide-gray-200">
-        {categorizedPublications.map((publicationCategory) => (
+        {publicationsByCategory.map((publicationCategory) => (
           <div className="pt-10" key={publicationCategory.id}>
             <PublicationCategory publicationCategory={publicationCategory} />
           </div>

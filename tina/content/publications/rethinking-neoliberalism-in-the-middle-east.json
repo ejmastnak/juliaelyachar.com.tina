@@ -1,0 +1,29 @@
+{
+  "title": "Rethinking Neoliberalism in the Middle East",
+  "type": "Chapter",
+  "authors": [{ "givenName": "Julia", "familyName": "Elyachar" }],
+  "editors": [
+    { "givenName": "Soraya", "familyName": "Altorki" }
+  ],
+  "containerTitle": "A Companion to the Anthropology of the Middle East",
+  "publisher": "Wiley-Blackwell",
+  "publisherPlace": "",
+  "volume": "First Edition",
+  "edition": "",
+  "issue": "",
+  "pages": "411–433",
+  "year": "2015",
+  "month": "",
+  "categories": [
+    {
+      "category": "tina/content/publicationCategory/politicalEconomy.json"
+    },
+    {
+      "category": "tina/content/publicationCategory/neoliberalism.json"
+    }
+  ],
+  "img": "/src/assets/img/uploads/publications/companion-to-the-anthropology-of-the-middle-east.jpg",
+  "imgAlt": "Cover of A Companion to the Anthropology of the Middle East",
+  "href": "https://onlinelibrary.wiley.com/doi/10.1002/9781118475683.ch21",
+  "featured": false
+}

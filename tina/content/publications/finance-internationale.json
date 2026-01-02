@@ -1,0 +1,24 @@
+{
+  "title": "Finance internationale, micro-crédit et religion de la société civile en Égypte",
+  "type": "Journal article",
+  "authors": [{ "givenName": "Julia", "familyName": "Elyachar" }],
+  "editors": [],
+  "containerTitle": "Critique Internationale",
+  "publisher": "",
+  "publisherPlace": "",
+  "volume": "4",
+  "edition": "",
+  "issue": "13",
+  "pages": "139–152",
+  "year": "2001",
+  "month": "November",
+  "categories": [
+    {
+      "category": "tina/content/publicationCategory/ngos.json"
+    }
+  ],
+  "img": "/src/assets/img/uploads/publications/critique-internationale.jpg",
+  "imgAlt": "Cover of Critique Internationale",
+  "href": "https://shs.cairn.info/revue-critique-internationale-2001-4-page-139?lang=fr",
+  "featured": false
+}

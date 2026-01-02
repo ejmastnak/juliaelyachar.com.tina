@@ -1,12 +1,11 @@
-import type { PublicationPublications } from "@tina/__generated__/types";
-import { TinaMarkdown } from "tinacms/dist/rich-text";
-import { ChevronRightIcon } from '@heroicons/react/24/outline'
+import type { Publication } from "@tina/__generated__/types";
+import { renderChicagoCitation } from '@src/lib/renderChicagoCitation.jsx'
 
 type Props = {
   publicationCategory: {
     id: string
     name: string
-    publications: Array<PublicationPublications>
+    publications: Array<Publication>
   }
 };
 
@@ -18,13 +17,11 @@ export default function PublicationCategory({ publicationCategory }: Props) {
         {publicationCategory.publications.map((publication) => (
           <li>
             <div className="p-6 rounded-lg hover:bg-gray-50 max-w-3xl">
-              <div><TinaMarkdown content={publication.citation}/></div>
-              <div className="flex gap-x-4">
-                <span className="inline-flex items-center rounded-full bg-indigo-50 px-1.5 py-0.5 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10">{publicationCategory.name}</span>
-              </div>
-              <a href={publication.href} target="_blank" rel="noopener noreferrer" className="mt-4 w-fit font-semibold text-gray-800 flex items-center hover:text-gray-900 hover:underline">
+              <div className="font-medium">{renderChicagoCitation(publication)}</div>
+              <span className="mt-2 inline-block items-center rounded-full bg-indigo-50 px-1.5 py-0.5 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10">{publicationCategory.name}</span>
+
+              <a href={publication.href} target="_blank" rel="noopener noreferrer" className="mt-3 w-fit text-gray-700 font-medium flex items-center hover:text-gray-900 hover:underline">
                 Link
-                <ChevronRightIcon className="size-5 text-gray-900 shrink-0 translate-y-px"/>
               </a>
             </div>
           </li>

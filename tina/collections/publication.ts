@@ -1,47 +1,132 @@
 import type { Collection } from "tinacms";
+import publicationTypes from "@src/assets/data/publicationTypes.json";
 
 export const PublicationCollection: Collection = {
 
   name: "publication",
   label: "Articles and Chapters",
-  path: "tina/content/publication",
+  path: "tina/content/publications",
   format: "json",
-
-  ui: {
-    allowedActions: {
-      create: false,
-      delete: false,
-    },
+  defaultItem: {
+    title: "Markets, Morality, and the State",
+    type: Object.values(publicationTypes)[0],
+    authors: [ { givenName: "Julia", familyName: "Elyachar" } ],
+    containerTitle: "Example Journal of Social Theory"
   },
-
   fields: [
     {
-      name: "publications",
-      label: "Publications",
-      type: "object",
+      name: 'title',
+      label: 'Title',
+      type: 'string',
+      required: true,
+      isTitle: true,
+    },
+    {
+      name: 'type',
+      label: 'Type of publication',
+      type: 'string',
+      required: true,
+      options: Object.values(publicationTypes),
+    },
+    {
+      name: 'authors',
+      label: 'Author(s)',
+      type: 'object',
       list: true,
-      itemProps: (publication) => {
-        // Joins MD nodes into a string
-        return { label: publication.citation?.children[0]?.children.map(item => item.text ? item.text : '').join(' ') };
-      },
-      defaultItem: {
-        citation: "“Markets, Morality, and the State.” *Example Journal of Social Theory* 12, no. 2 (April 2018): 123–45.",
-        category: "tina/content/shared/publicationCategory/ngos.json",
-        href: "www.publication.com",
+      ui: {
+        itemProps: (editor) => {
+          return { label: (editor.givenName ? editor.givenName + ", " : "") + editor.familyName };
+        },
       },
       fields: [
         {
-          name: "citation",
-          label: "Title",
-          type: "rich-text",
-          required: true,
+          name: 'givenName',
+          label: 'Given name',
+          type: 'string',
         },
+        {
+          name: 'familyName',
+          label: 'Family name',
+          type: 'string',
+        },
+      ],
+    },
+    {
+      name: 'editors',
+      label: 'Editor(s) (optional)',
+      type: 'object',
+      list: true,
+      ui: {
+        itemProps: (editor) => {
+          return { label: (editor.givenName ? editor.givenName + ", " : "") + editor.familyName };
+        },
+      },
+      defaultItem: {
+        givenName: "John",
+        familyName: "Doe"
+      },
+      fields: [
+        {
+          name: 'givenName',
+          label: 'Given name',
+          type: 'string',
+        },
+        {
+          name: 'familyName',
+          label: 'Family name',
+          type: 'string',
+        },
+      ],
+    },
+    {
+      name: 'containerTitle',
+      label: 'Container title',
+      description: "Title of the journal, book, encyclopedia, newspaper, etc. in which the item was published",
+      type: 'string',
+    },
+    {
+      name: 'publisher',
+      label: 'Publisher',
+      type: 'string',
+    },
+    {
+      name: 'volume',
+      label: 'Volume',
+      type: 'string',
+    },
+    {
+      name: 'issue',
+      label: 'Issue',
+      type: 'string',
+    },
+    {
+      name: 'pages',
+      label: 'Pages (e.g. 234-242)',
+      type: 'string',
+    },
+    {
+      name: 'year',
+      label: 'Year',
+      type: 'string',
+    },
+    {
+      name: 'categories',
+      label: 'Categories',
+      categories: "E.g. NGOs, Political Economy, etc.",
+      type: 'object',
+      list: true,
+      ui: {
+        itemProps: (category) => {
+          return { label: category.category };
+        },
+      },
+      fields: [
         {
           name: 'category',
           label: 'Category',
           type: 'reference',
           collections: ['publicationCategory'],
-          required: true,
+          // required: true,
           ui: {
             optionComponent: (
               props: {
@@ -52,30 +137,28 @@ export const PublicationCollection: Collection = {
               return props.name;
             }
           }
-        },
-        {
-          name: 'img',
-          label: 'Image',
-          type: 'image',
-        },
-        {
-          name: 'imgAlt',
-          label: 'Image alt text',
-          type: 'string',
-        },
-        {
-          name: 'href',
-          label: 'Link',
-          type: 'string',
-          required: true,
-        },
-        {
-          name: 'featured',
-          label: 'Featured on home page?',
-          type: "boolean",
-          required: true,
-        },
-      ]
+        }
+      ],
+    },
+    {
+      name: 'img',
+      label: 'Image',
+      type: 'image',
+    },
+    {
+      name: 'imgAlt',
+      label: 'Image alt text',
+      type: 'string',
+    },
+    {
+      name: 'href',
+      label: 'Link',
+      type: 'string',
+    },
+    {
+      name: 'featured',
+      label: 'Featured on home page?',
+      type: "boolean",
     },
   ],
 };

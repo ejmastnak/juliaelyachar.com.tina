@@ -6,7 +6,8 @@ import Publications from "@tina/pages/Publications/Index.tsx";
 const content = await client.queries.myPublicationsPage({ relativePath: "index.json" });
 const head = content.data.publicationsPage.head;
 
-const publications = await client.queries.myPublication({ relativePath: "index.json" });
+const publicationsResponse = await client.queries.publicationConnection();
+const publications = publicationsResponse.data.publicationConnection.edges.map((edge) => edge.node);
 const markets = await client.queries.book({ relativePath: "markets-of-dispossession.json" });
 const semicivilized = await client.queries.book({ relativePath: "on-the-semicivilized.json" });
 const infrastructures = await client.queries.book({ relativePath: "thinking-infrastructures.json" });
@@ -14,5 +15,5 @@ const infrastructures = await client.queries.book({ relativePath: "thinking-infr
 ---
 
 <BaseLayout head={head}>
-  <Publications {...content} publications={publications.data.publication.publications} markets={markets.data.book} semicivilized={semicivilized.data.book} infrastructures={infrastructures.data.book} client:tina />
+  <Publications {...content} publications={publications} markets={markets.data.book} semicivilized={semicivilized.data.book} infrastructures={infrastructures.data.book} client:tina />
 </BaseLayout>
