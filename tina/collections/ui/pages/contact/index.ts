@@ -4,7 +4,7 @@ export const ContactPageCollection: Collection = {
 
   name: "contactPage",
   label: "Contact Page",
-  path: "tina/content/pages/contact",
+  path: "tina/content/ui/pages/contact",
   format: "json",
 
   ui: {

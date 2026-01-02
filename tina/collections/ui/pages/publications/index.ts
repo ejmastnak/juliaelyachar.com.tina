@@ -1,14 +1,14 @@
 import type { Collection } from "tinacms";
 
-export const AboutPageCollection: Collection = {
+export const PublicationsPageCollection: Collection = {
 
-  name: "aboutPage",
-  label: "About Page",
-  path: "tina/content/pages/about",
+  name: "publicationsPage",
+  label: "Publications Page",
+  path: "tina/content/ui/pages/publications",
   format: "json",
 
   ui: {
-    router: () => "/about/",
+    router: () => "/publications/",
     allowedActions: {
       create: false,
       delete: false,
@@ -34,38 +34,22 @@ export const AboutPageCollection: Collection = {
       ],
     },
     {
-      name: "h1",
-      label: "Heading",
-      type: "string",
-      required: true,
-    },
-    {
-      name: 'summary',
-      label: 'Summary',
+      name: 'booksHeading',
+      label: 'Books heading',
       type: 'string',
       required: true,
     },
     {
-      name: 'img',
-      label: 'Image',
-      type: 'image',
-    },
-    {
-      name: 'imgAlt',
-      label: 'Image alt text',
-      type: 'string',
-    },
-    {
-      name: 'cvButtonText',
-      label: 'CV button text',
+      name: 'articlesHeading',
+      label: 'Articles heading',
       type: 'string',
       required: true,
     },
     {
-      name: 'body',
-      label: 'Body',
+      name: 'cv',
+      label: 'CV link',
       type: 'rich-text',
       required: true,
     },
-  ],
+  ]
 };

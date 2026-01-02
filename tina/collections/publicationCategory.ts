@@ -4,7 +4,7 @@ export const PublicationCategoryCollection: Collection = {
 
   name: "publicationCategory",
   label: "Article and Chapter Categories",
-  path: "tina/content/shared/publicationCategory",
+  path: "tina/content/publicationCategory",
   format: "json",
 
   fields: [

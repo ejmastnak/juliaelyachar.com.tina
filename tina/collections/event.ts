@@ -4,7 +4,7 @@ export const EventCollection: Collection = {
 
   name: "event",
   label: "Events",
-  path: "tina/content/shared/event",
+  path: "tina/content/event",
   format: "json",
 
   ui: {

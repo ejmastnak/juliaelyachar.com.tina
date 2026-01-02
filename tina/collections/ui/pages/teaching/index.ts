@@ -4,7 +4,7 @@ export const TeachingPageCollection: Collection = {
 
   name: "teachingPage",
   label: "Teaching Page",
-  path: "tina/content/pages/teaching",
+  path: "tina/content/ui/pages/teaching",
   format: "json",
 
   ui: {

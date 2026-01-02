@@ -4,7 +4,7 @@ export const BookCollection: Collection = {
 
   name: "book",
   label: "Books",
-  path: "tina/content/shared/book",
+  path: "tina/content/book",
   format: "json",
 
   ui: {

@@ -4,7 +4,7 @@ export const HomePageCollection: Collection = {
 
   name: "homePage",
   label: "Home Page",
-  path: "tina/content/pages/home",
+  path: "tina/content/ui/pages/index",
   format: "json",
 
   ui: {

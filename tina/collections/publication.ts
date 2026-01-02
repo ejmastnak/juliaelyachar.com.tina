@@ -4,7 +4,7 @@ export const PublicationCollection: Collection = {
 
   name: "publication",
   label: "Articles and Chapters",
-  path: "tina/content/shared/publication",
+  path: "tina/content/publication",
   format: "json",
 
   ui: {

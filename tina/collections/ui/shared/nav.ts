@@ -1,10 +1,10 @@
 import type { Collection } from "tinacms";
 
-export const FooterCollection: Collection = {
+export const NavCollection: Collection = {
 
-  name: "footer",
-  label: "Footer",
-  path: "tina/content/shared/footer",
+  name: "nav",
+  label: "Nav",
+  path: "tina/content/ui/shared/nav",
   format: "json",
 
   ui: {
@@ -16,18 +16,8 @@ export const FooterCollection: Collection = {
 
   fields: [
     {
-      name: "name",
-      label: "Name",
-      type: "string",
-    },
-    {
-      name: "email",
-      label: "Email",
-      type: "string",
-    },
-    {
-      name: "footerLinks",
-      label: "Footer Links",
+      name: "navLinks",
+      label: "Nav Links",
       type: "object",
       list: true,
       itemProps: (item) => {
@@ -51,11 +41,6 @@ export const FooterCollection: Collection = {
           required: true,
         },
       ],
-    },
-    {
-      name: "address",
-      label: "Address",
-      type: "rich-text",
     }
   ],
 };
