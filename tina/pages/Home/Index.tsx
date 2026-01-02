@@ -6,13 +6,13 @@ import Publications from './partials/Publications.tsx'
 import About from './partials/About.tsx'
 import Events from './partials/Events.tsx'
 
-import type { MyHomePageQuery, MyHomePageQueryVariables, MyEventQuery, MyPublicationQuery } from "@tina/__generated__/types";
+import type { MyHomePageQuery, MyHomePageQueryVariables, Event, MyPublicationQuery } from "@tina/__generated__/types";
 
 type Props = {
   variables: HomePageQueryVariables;
   data: HomePageQuery;
   query: string;
-  eventsData: MyEventQuery;
+  events: Array<Event>;
   publicationsData: MyPublicationQuery;
 };
 
@@ -38,7 +38,7 @@ export default function HomePage(props: Props) {
       </div>
       <Wrapper classes="mt-5">
         <div className="py-10 md:py-16">
-          <Events homePage={homePage} eventsData={props.eventsData} />
+          <Events homePage={homePage} events={props.events} />
         </div>
       </Wrapper>
 

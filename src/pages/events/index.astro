@@ -5,8 +5,10 @@ import Events from "@tina/pages/Events/Index.tsx";
 import { optimizeTinaImages } from '@/lib/optimizeTinaImages';
 
 const content = await client.queries.myEventsPage({ relativePath: "index.json" });
-const events = await client.queries.myEvent({ relativePath: "index.json" });
+const eventsResponse = await client.queries.eventConnection();
 const head = content.data.eventsPage.head;
+
+const events = eventsResponse.data.eventConnection.edges.map((edge) => edge.node);
 
 await optimizeTinaImages(content, [
   {
@@ -18,5 +20,5 @@ await optimizeTinaImages(content, [
 ---
 
 <BaseLayout head={head}>
-  <Events {...content} eventsData={events.data} client:tina />
+  <Events {...content} events={events} client:tina />
 </BaseLayout>
