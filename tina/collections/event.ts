@@ -40,8 +40,7 @@ export const EventCollection: Collection = {
     {
       name: 'date',
       label: 'Date',
-      description: 'Use YYYY-MM-DD format, e.g. 2025-12-31',
-      type: 'string',
+      type: 'datetime',
       required: true,
     },
     {
