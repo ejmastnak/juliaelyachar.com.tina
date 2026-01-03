@@ -3,9 +3,9 @@
     "title": "Events",
     "description": "Lectures, book talks, seminars, and interviews featuring Julia Elyachar on anthropology, finance, coloniality, and Middle Eastern political economy."
   },
-  "h1": "Events",
-  "img": "/src/assets/img/uploads/classroom.jpg",
-  "imgAlt": "Image of Julia",
+  "h1": "Events and Podcasts",
   "upcomingEventsHeading": "Upcoming events",
-  "pastEventsHeading": "Past events"
+  "pastEventsHeading": "Past events",
+  "img": "/src/assets/img/uploads/classroom.jpg",
+  "imgAlt": "Image of Julia"
 }
