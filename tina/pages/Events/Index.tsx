@@ -41,7 +41,7 @@ export default function EventsPage(props: Props) {
             <h2 data-tina-field={tinaField(eventsPage, "upcomingEventsHeading")} className="text-2xl font-semibold">{eventsPage.upcomingEventsHeading}</h2>
             <ul role="list" className="divide-y divide-gray-200">
               {upcomingEvents.map((event) => (
-                <li className="py-5"><Event event={event} /></li>
+                <li key={event.id} className="py-5"><Event event={event} /></li>
               ))}
             </ul>
           </div>
@@ -51,7 +51,7 @@ export default function EventsPage(props: Props) {
             <h2 data-tina-field={tinaField(eventsPage, "pastEventsHeading")} className="text-2xl font-semibold">{eventsPage.pastEventsHeading}</h2>
             <ul role="list" className="divide-y divide-gray-200">
               {pastEvents.map((event) => (
-                <li className="py-5"><Event event={event} /></li>
+                <li key={event.id} className="py-5"><Event event={event} /></li>
               ))}
             </ul>
           </div>

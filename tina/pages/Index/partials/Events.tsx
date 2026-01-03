@@ -22,12 +22,12 @@ export default function About({ homePage, events }: Props) {
       <h2 data-tina-field={tinaField(homePage, "eventsHeading")} className="text-5xl">{homePage.eventsHeading}</h2>
       <ul role="list" className="mt-8 lg:mt-12 flex flex-col gap-y-8 w-fit">
         {upcomingEvents.slice(0, N).map((event) => (
-          <li><Event event={event}/></li>
+          <li key={event.id}><Event event={event}/></li>
         ))}
         <li className="border-t border-gray-300"/>
         {upcomingEvents.length < N && 
           pastEvents.slice(0, N - pastEvents.length).map((event) => (
-            <li><Event event={event}/></li>
+            <li key={event.id}><Event event={event}/></li>
           ))
         }
       </ul>

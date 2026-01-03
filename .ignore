@@ -1,6 +1,8 @@
 !*
 .git/
 
+public
+
 # dependencies
 node_modules/
 

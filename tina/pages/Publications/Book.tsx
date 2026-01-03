@@ -19,6 +19,12 @@ const descriptionMdComponents = {
   ),
 };
 
+// Extracts a string value from the reviewer rich text's
+// Abstract Syntax Tree to use as a loop key.
+function extractReviewerKeyfromAst(reviewer) {
+  return reviewer?.children[0]?.children[0]?.text || (reviewer?.children[0]?.text)
+}
+
 export default function PublicationsPage(props: Props) {
   const { data } = useTina({
     query: props.query,
@@ -55,7 +61,7 @@ export default function PublicationsPage(props: Props) {
         <h2 data-tina-field={tinaField(book, "reviewsHeading")} className="text-2xl font-semibold text-center"><TinaMarkdown content={book.reviewsHeading} /></h2>
         <div className="mt-8 flex flex-col gap-y-8">
           {book.reviews.map((review, idx) => (
-            <div className={(idx % 2 == 1) ? 'ml-auto' : ''}>
+            <div key={extractReviewerKeyfromAst(review.reviewer)} className={(idx % 2 == 1) ? 'ml-auto' : ''}>
               <div data-tina-field={tinaField(review, "review")} className="max-w-3xl font-medium"><TinaMarkdown content={review.review} /></div>
               <div data-tina-field={tinaField(review, "reviewer")} className="mt-2"><TinaMarkdown content={review.reviewer} /></div>
             </div>

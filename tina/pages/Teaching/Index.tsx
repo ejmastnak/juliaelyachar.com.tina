@@ -39,7 +39,7 @@ export default function TeachingPage(props: Props) {
           <h3 data-tina-field={tinaField(teachingPage, "princetonCoursesHeading")} className="text-2xl">{teachingPage.princetonCoursesHeading}</h3>
           <ul className="mt-3 ml-5 list-disc flex flex-col gap-y-2 text-gray-700">
             {teachingPage.princetonCourses.map((course) => (
-            <li data-tina-field={tinaField(course, "name")} key={course.name}>{course.name}</li>
+            <li key={course.name} data-tina-field={tinaField(course, "name")}>{course.name}</li>
             ))}
           </ul>
         </div>
@@ -48,7 +48,7 @@ export default function TeachingPage(props: Props) {
           <h3 data-tina-field={tinaField(teachingPage, "uciCoursesHeading")} className="text-2xl">{teachingPage.uciCoursesHeading}</h3>
           <ul className="mt-3 ml-5 list-disc flex flex-col gap-y-2 text-gray-800">
             {teachingPage.uciCourses.map((course) => (
-            <li data-tina-field={tinaField(course, "name")} key={course.name}>{course.name}</li>
+            <li key={course.name} data-tina-field={tinaField(course, "name")}>{course.name}</li>
             ))}
           </ul>
         </div>
@@ -57,7 +57,7 @@ export default function TeachingPage(props: Props) {
           <h3 data-tina-field={tinaField(teachingPage, "nyuCoursesHeading")} className="text-2xl">{teachingPage.nyuCoursesHeading}</h3>
           <ul className="mt-3 ml-5 list-disc flex flex-col gap-y-2 text-gray-700">
             {teachingPage.nyuCourses.map((course) => (
-            <li data-tina-field={tinaField(course, "name")} key={course.name}>{course.name}</li>
+            <li key={course.name} data-tina-field={tinaField(course, "name")}>{course.name}</li>
             ))}
           </ul>
         </div>
