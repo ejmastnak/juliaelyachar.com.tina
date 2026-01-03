@@ -3,7 +3,6 @@ import path from "path";
 
 const adminIndexPath = path.join(
   process.cwd(),
-  "public",
   "admin",
   "index.html"
 );
