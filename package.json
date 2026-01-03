@@ -8,7 +8,8 @@
     "build": "tinacms build && astro build",
     "preview": "astro preview",
     "typecheck": "tsc --noEmit",
-    "astro": "astro"
+    "astro": "astro",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.4",
@@ -22,7 +23,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.5.0",
-    "tinacms": "^2.8.2"
+    "tinacms": "2.9.0"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.19",
@@ -30,6 +31,7 @@
     "@types/node": "^22.18.0",
     "astro-heroicons": "^2.1.5-1",
     "autoprefixer": "^10.4.21",
+    "patch-package": "^8.0.1",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.18"
   }
