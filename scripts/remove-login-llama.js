@@ -3,13 +3,14 @@ import path from "path";
 
 const adminIndexPath = path.join(
   process.cwd(),
+  "dist",
   "admin",
   "index.html"
 );
 
 if (!fs.existsSync(adminIndexPath)) {
   console.error(
-    "[patch-tina-admin] ERROR: public/admin/index.html not found."
+    "[patch-tina-admin] ERROR: index.html file not found."
   );
   process.exit(1);
 }
