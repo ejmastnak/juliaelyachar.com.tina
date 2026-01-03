@@ -9,7 +9,8 @@
     "preview": "astro preview",
     "typecheck": "tsc --noEmit",
     "astro": "astro",
-    "postinstall": "patch-package"
+    "postinstall": "patch-package",
+    "postbuild": "node scripts/remove-login-llama.js"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.4",
