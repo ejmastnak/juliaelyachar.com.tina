@@ -25,7 +25,7 @@ export default function Hero({ homePage }: Props) {
         <h1 className="text-center sm:text-left text-4xl" data-tina-field={tinaField(homePage, "heroHeading")}>{homePage.heroHeading}</h1>
         <img src={homePage.heroImg} alt={homePage.heroImgAlt} data-tina-field={tinaField(homePage, "heroImg")} className="my-5 mx-auto sm:mx-0 w-full max-w-[200px] sm:max-w-[300px] h-64 rounded object-cover object-right" />
         <div className="max-w-lg text-center sm:text-left">
-          <div data-tina-field={tinaField(homePage, "heroDescription")} className="mt-5 flex flex-col gap-y-2">
+          <div data-tina-field={tinaField(homePage, "heroDescription")} className="mt-5 flex flex-col gap-y-2 myprosedark myprose-condensed">
             <TinaMarkdown content={homePage.heroDescription} />
           </div>
           <LinkButton tinaField={tinaField(homePage, "heroButtonText")} classes="mt-5" href="/books/on-the-semicivilized">
@@ -39,7 +39,7 @@ export default function Hero({ homePage }: Props) {
         <img src={homePage.heroImg} alt={homePage.heroImgAlt} data-tina-field={tinaField(homePage, "heroImg")} className="max-w-sm xl:max-w-md h-80 rounded object-cover object-right" />
         <div className="max-w-md">
           <h1 className="text-4xl" data-tina-field={tinaField(homePage, "heroHeading")}>{homePage.heroHeading}</h1>
-          <div data-tina-field={tinaField(homePage, "heroDescription")} className="mt-5 flex flex-col gap-y-2">
+          <div data-tina-field={tinaField(homePage, "heroDescription")} className="mt-5 flex flex-col gap-y-2 myprosedark myprose-condensed">
             <TinaMarkdown content={homePage.heroDescription} />
           </div>
           <LinkButton tinaField={tinaField(homePage, "heroButtonText")} classes="mt-5" href="/books/on-the-semicivilized">

@@ -83,7 +83,7 @@ export default function PublicationsPage(props: Props) {
             img={semicivilized.img}
             imgAlt={semicivilized.imgAlt}
           >
-            <div className="prose"><TinaMarkdown content={semicivilized.publisherDescription}/></div>
+            <div className="myprose"><TinaMarkdown content={semicivilized.publisherDescription}/></div>
             <LinkButton classes="mt-6" href={semicivilized.localLink}>
               <div><TinaMarkdown content={semicivilized.localLinkButtonText}/></div>
             </LinkButton>
@@ -99,7 +99,7 @@ export default function PublicationsPage(props: Props) {
             img={markets.img}
             imgAlt={markets.imgAlt}
           >
-            <div className="prose"><TinaMarkdown content={markets.publisherDescription}/></div>
+            <div className="myprose"><TinaMarkdown content={markets.publisherDescription}/></div>
             <LinkButton classes="mt-6" href={markets.localLink}>
               <div><TinaMarkdown content={markets.localLinkButtonText}/></div>
             </LinkButton>
@@ -115,7 +115,7 @@ export default function PublicationsPage(props: Props) {
             img={infrastructures.img}
             imgAlt={infrastructures.imgAlt}
           >
-            <div className="prose"><TinaMarkdown content={infrastructures.publisherDescription}/></div>
+            <div className="myprose"><TinaMarkdown content={infrastructures.publisherDescription}/></div>
             <LinkButton classes="mt-6" href={infrastructures.publisherLink}>
               <div><TinaMarkdown content={infrastructures.publisherLinkButtonText}/></div>
             </LinkButton>

@@ -1,5 +1,6 @@
 import { ChevronRightIcon } from '@heroicons/react/24/outline'
 import { TinaMarkdown } from "tinacms/dist/rich-text";
+import Pillbox from '@tina/components/Pillbox.tsx'
 
 type Props = {
   event: {
@@ -58,12 +59,14 @@ export default function Event({event}: Props) {
       </div>
 
       <div>
-        <div className="font-semibold"><TinaMarkdown content={event.title} /></div>
-        <p className="italic text-sm">{event.institution}</p>
-        <p className="mt-px text-gray-700 text-sm">{event.type}</p>
-        <p className="text-gray-700 text-sm">{event.location}</p>
-        <div className="mt-3 text-sm max-w-2xl"><TinaMarkdown content={event.description} /></div>
-        {event.href && <a href={event.href} className="mt-3 w-fit text-sm font-semibold flex items-center hover:text-gray-900 hover:underline"><span>Link</span> <ChevronRightIcon className="size-5 shrink-0 translate-y-px"/></a>}
+        <p className="font-semibold text-gray-800">{event.title}</p>
+        <p className="italic text-sm ml-px">{event.institution}</p>
+        <div className="flex gap-x-2 my-1">
+          {event.type && <Pillbox>{event.type}</Pillbox>}
+          {event.location && <Pillbox>Location: {event.location}</Pillbox>}
+        </div>
+        <div className="mt-2 text-sm max-w-2xl myprose"><TinaMarkdown content={event.description} /></div>
+        {event.href && <a href={event.href} className="mt-2 w-fit text-sm text-gray-800 font-medium flex items-center hover:text-gray-900 hover:underline"><span>Link</span> <ChevronRightIcon className="size-4 text-gray-800 hover:text-gray-900 shrink-0 translate-y-px"/></a>}
       </div>
     </div>
   );

@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      lineHeight: {
+        'prose': '1.8',
+      },
       colors: {
         sc: {
           orange: '#f7941d',

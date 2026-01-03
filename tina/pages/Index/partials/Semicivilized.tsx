@@ -22,10 +22,10 @@ export default function Semicivilized({ homePage }: Props) {
       titleTinaField={tinaField(homePage, "bookHeading")}
       subtitleTinaField={tinaField(homePage, "bookSubtitle")}
     >
-      <div data-tina-field={tinaField(homePage, "bookDescription")} className="mt-5 flex flex-col gap-y-2">
+      <div data-tina-field={tinaField(homePage, "bookDescription")} className="mt-5 myprose">
         <TinaMarkdown content={homePage.bookDescription} />
       </div>
-      <LinkButton tinaField={tinaField(homePage, "bookButtonText")} classes="mt-5" href="/publications#books">
+      <LinkButton tinaField={tinaField(homePage, "bookButtonText")} classes="mt-6" href="/publications#books">
         {homePage.bookButtonText}
       </LinkButton>
     </Book>

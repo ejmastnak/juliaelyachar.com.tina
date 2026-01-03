@@ -11,6 +11,14 @@ type Props = {
   query: string;
 };
 
+const mdComponents = {
+  a: (props) => (
+    <a className="text-blue-500 hover:text-blue-600 hover:underline font-medium hover:cursor-pointer">
+      {props.children}
+    </a>
+  ),
+};
+
 export default function TeachingPage(props: Props) {
   const { data } = useTina({
     query: props.query,
@@ -26,8 +34,8 @@ export default function TeachingPage(props: Props) {
         <h1 data-tina-field={tinaField(teachingPage, "h1")} className="text-5xl ">{teachingPage.h1}</h1>
       </div>
 
-      <div data-tina-field={tinaField(teachingPage, "description")} className="max-w-2xl prose"><TinaMarkdown content={teachingPage.description} /></div>
-      <div data-tina-field={tinaField(teachingPage, "press")} className="mt-5 max-w-3xl prose"><TinaMarkdown content={teachingPage.press} /></div>
+      <div data-tina-field={tinaField(teachingPage, "description")} className="max-w-2xl myprose"><TinaMarkdown content={teachingPage.description} /></div>
+      <div data-tina-field={tinaField(teachingPage, "press")} className="mt-5 max-w-3xl myprose"><TinaMarkdown content={teachingPage.press} components={mdComponents} /></div>
 
       <section className="mt-12">
 
@@ -44,16 +52,16 @@ export default function TeachingPage(props: Props) {
           </ul>
         </div>
 
-        <div className="mt-8">
+        <div className="mt-10">
           <h3 data-tina-field={tinaField(teachingPage, "uciCoursesHeading")} className="text-2xl">{teachingPage.uciCoursesHeading}</h3>
-          <ul className="mt-3 ml-5 list-disc flex flex-col gap-y-2 text-gray-800">
+          <ul className="mt-3 ml-5 list-disc flex flex-col gap-y-2 text-gray-700">
             {teachingPage.uciCourses.map((course) => (
             <li key={course.name} data-tina-field={tinaField(course, "name")}>{course.name}</li>
             ))}
           </ul>
         </div>
 
-        <div className="mt-8">
+        <div className="mt-10">
           <h3 data-tina-field={tinaField(teachingPage, "nyuCoursesHeading")} className="text-2xl">{teachingPage.nyuCoursesHeading}</h3>
           <ul className="mt-3 ml-5 list-disc flex flex-col gap-y-2 text-gray-700">
             {teachingPage.nyuCourses.map((course) => (

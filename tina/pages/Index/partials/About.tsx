@@ -15,10 +15,10 @@ export default function About({ homePage }: Props) {
       <div className="sm:hidden max-w-6xl w-fit mx-auto">
         <h2 data-tina-field={tinaField(homePage, "aboutHeading")} className="text-3xl text-center">{homePage.aboutHeading}</h2>
         <div className="max-w-md text-sc-white">
-          <div data-tina-field={tinaField(homePage, "aboutDescription")} className="mt-5 flex flex-col gap-y-2">
+          <div data-tina-field={tinaField(homePage, "aboutDescription")} className="mt-5 myprosedark">
             <TinaMarkdown content={homePage.aboutDescription} />
           </div>
-          <LinkButton tinaField={tinaField(homePage, "aboutButtonText")} classes="mt-5" href="/about">
+          <LinkButton tinaField={tinaField(homePage, "aboutButtonText")} classes="mt-6" href="/about">
             {homePage.aboutButtonText}
           </LinkButton>
         </div>
@@ -28,10 +28,10 @@ export default function About({ homePage }: Props) {
       <div className="hidden sm:block max-w-6xl w-fit mx-auto gap-x-10">
         <div className="max-w-md text-sc-white">
           <h2 data-tina-field={tinaField(homePage, "aboutHeading")} className="text-4xl">{homePage.aboutHeading}</h2>
-          <div data-tina-field={tinaField(homePage, "aboutDescription")} className="mt-5 flex flex-col gap-y-2">
+          <div data-tina-field={tinaField(homePage, "aboutDescription")} className="mt-5 myprosedark">
             <TinaMarkdown content={homePage.aboutDescription} />
           </div>
-          <LinkButton tinaField={tinaField(homePage, "aboutButtonText")} classes="mt-5" href="/about">
+          <LinkButton tinaField={tinaField(homePage, "aboutButtonText")} classes="mt-6" href="/about">
             {homePage.aboutButtonText}
           </LinkButton>
         </div>

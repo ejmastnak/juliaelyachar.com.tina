@@ -25,12 +25,12 @@ export default function AboutPage(props: Props) {
       <div className="sm:flex sm:flex-row-reverse gap-x-8 md:gap-x-12 max-w-3xl">
         <img data-tina-field={tinaField(aboutPage, "img")} src={aboutPage.img} alt={aboutPage.imgAlt} className="hidden sm:block max-w-sm xl:max-w-md h-80 rounded object-cover object-right" />
         <div>
-          <p data-tina-field={tinaField(aboutPage, "summary")}>{aboutPage.summary}</p>
+          <p className="myprose" data-tina-field={tinaField(aboutPage, "summary")}>{aboutPage.summary}</p>
           <LinkButton tinaField={tinaField(aboutPage, "cvButtonText")} classes="mt-5" href="/julia-elyachar-cv.pdf">{aboutPage.cvButtonText}</LinkButton>
         </div>
       </div>
 
-      <div data-tina-field={tinaField(aboutPage, "body")} className="mt-8 md:mt-12 flex flex-col gap-y-4 max-w-2xl">
+      <div data-tina-field={tinaField(aboutPage, "body")} className="mt-8 md:mt-12 myprose myprose-loose">
         <TinaMarkdown content={aboutPage.body} />
       </div>
 
