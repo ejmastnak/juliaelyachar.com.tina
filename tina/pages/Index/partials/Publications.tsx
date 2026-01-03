@@ -17,7 +17,7 @@ export default function Publications({ homePage, publications }: Props) {
         {publications.filter((publication) => publication.featured).map((publication) => (
           <div key={publication.id}>
             <a target="_blank" rel="noopener noreferrer" href={publication.href} className="block w-fit mx-auto rounded overflow-hidden hover:shadow-lg hover:ring-2 hover:ring-gray-200">
-              <img src={publication.img} className="max-w-sm h-96 object-cover object-center mx-auto"/>
+              <img src={publication.img} className="max-w-sm h-80 object-cover object-center mx-auto"/>
             </a>
             <div className="mt-3 text-center leading-snug">
               {renderChicagoCitation(publication)}
