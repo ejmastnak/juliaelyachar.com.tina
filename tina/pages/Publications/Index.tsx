@@ -18,7 +18,7 @@ type Props = {
 
 const mdLinkComponents = {
   a: (props) => (
-    <a className="text-blue-500 font-semibold hover:underline hover:text-blue-600 hover:cursor-pointer">{props.children}</a>
+    <a href={props.url} className="text-blue-500 font-semibold hover:underline hover:text-blue-600 hover:cursor-pointer">{props.children}</a>
   ),
 };
 
