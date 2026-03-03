@@ -37,8 +37,8 @@ export default function PublicationsPage(props: Props) {
     <PageWrapper>
       <div className="text-center md:text-left">
         <h2 data-tina-field={tinaField(book, "title")} className="text-4xl font-medium">{book.title}</h2>
-        <p data-tina-field={tinaField(book, "subtitle")} className="mt-1 text-gray-700">{book.subtitle}</p>
-        {book.featuredText && <p data-tina-field={tinaField(book, "featuredText")} className="mx-auto md:mx-0 italic mt-1 w-fit rounded-full bg-orange-50 px-3 py-1 text-sm font-medium text-orange-700 ring-1 ring-inset ring-orange-700/40">{book.featuredText}</p>}
+        <p data-tina-field={tinaField(book, "subtitle")} className="mt-1 text-gray-700 max-w-2xl">{book.subtitle}</p>
+        {book.featuredText && <p data-tina-field={tinaField(book, "featuredText")} className="mx-auto md:mx-0 italic mt-2 w-fit rounded-full bg-orange-50 px-3 py-1 text-sm font-medium text-orange-700 ring-1 ring-inset ring-orange-700/40">{book.featuredText}</p>}
       </div>
 
       <div className="mt-12 md:flex md:flex-row-reverse gap-x-20 lg:px-16">
