@@ -76,6 +76,11 @@ export default function EventsPage(props: Props) {
                 <li key={event.id} className="py-5"><Event event={event} /></li>
               ))}
             </ul>
+            {upcomingEvents.length == 0 && 
+              <div data-tina-field={tinaField(eventsPage, "noUpcomingEventsMessage")} className="mt-2 text-gray-600">
+                No upcoming events to display—check back soon!
+              </div>
+            }
           </div>
 
           {/* Past events */}

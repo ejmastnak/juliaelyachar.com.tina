@@ -22,9 +22,9 @@ export default function Hero({ homePage }: Props) {
 
       {/* Mobile */}
       <div className="md:hidden mx-auto w-fit">
-        <h1 className="text-center sm:text-left text-4xl" data-tina-field={tinaField(homePage, "heroHeading")}>{homePage.heroHeading}</h1>
-        <img src={homePage.heroImg} alt={homePage.heroImgAlt} data-tina-field={tinaField(homePage, "heroImg")} className="my-5 mx-auto sm:mx-0 w-full max-w-[200px] sm:max-w-[300px] h-64 rounded object-cover object-right" />
-        <div className="max-w-lg text-center sm:text-left">
+        <h1 className="text-center md:text-left text-4xl" data-tina-field={tinaField(homePage, "heroHeading")}>{homePage.heroHeading}</h1>
+        <img src={homePage.heroImg} alt={homePage.heroImgAlt} data-tina-field={tinaField(homePage, "heroImg")} className="my-5 mx-auto md:mx-0 w-full max-w-[250px] h-64 sm:max-w-[300px] sm:h-72 rounded object-cover object-right" />
+        <div className="max-w-lg text-center md:text-left">
           <div data-tina-field={tinaField(homePage, "heroDescription")} className="mt-5 myprosedark myprose-condensed">
             <TinaMarkdown content={homePage.heroDescription} />
           </div>
@@ -36,7 +36,7 @@ export default function Hero({ homePage }: Props) {
 
       {/* Desktop */}
       <div className="hidden md:flex max-w-6xl w-fit mx-auto gap-x-12 xl:gap-x-16">
-        <img src={homePage.heroImg} alt={homePage.heroImgAlt} data-tina-field={tinaField(homePage, "heroImg")} className="max-w-sm xl:max-w-md h-80 rounded object-cover object-right" />
+        <img src={homePage.heroImg} alt={homePage.heroImgAlt} data-tina-field={tinaField(homePage, "heroImg")} className="max-w-sm xl:max-w-md w-[300px] h-[400px] rounded object-cover object-right" />
         <div className="max-w-md">
           <h1 className="text-4xl" data-tina-field={tinaField(homePage, "heroHeading")}>{homePage.heroHeading}</h1>
           <div data-tina-field={tinaField(homePage, "heroDescription")} className="mt-5 myprosedark myprose-condensed">
