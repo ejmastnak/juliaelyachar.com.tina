@@ -27,12 +27,13 @@ const footer = content.data.footer;
         </a>
       </div>
     </div>
-    <ul class="hidden md:flex text-lg ml-auto mt-3 flex justify-around gap-x-8 h-fit">
-      {footer.footerLinks.map((footerLink) => (
-      <li key={footerLink.text}><FooterLink href={footerLink.href}>{footerLink.text}</FooterLink></li>
-      ))}
-    </ul>
+    <div class="hidden ml-auto md:flex flex-col">
+      <ul class="mt-1.5 text-lg flex-grow flex justify-around gap-x-8">
+        {footer.footerLinks.map((footerLink) => (
+        <li key={footerLink.text}><FooterLink href={footerLink.href}>{footerLink.text}</FooterLink></li>
+        ))}
+      </ul>
+      <a href="/admin/index.html" class="ml-auto inline-block text-sm hover:underline">admin</a>
+    </div>
   </div>
 </div>
-
-
