@@ -27,13 +27,14 @@ const footer = content.data.footer;
         </a>
       </div>
     </div>
-    <div class="hidden ml-auto md:flex flex-col">
+    <div class="hidden ml-auto lg:flex flex-col">
       <ul class="mt-1.5 text-lg flex-grow flex justify-around gap-x-8">
         {footer.footerLinks.map((footerLink) => (
         <li key={footerLink.text}><FooterLink href={footerLink.href}>{footerLink.text}</FooterLink></li>
         ))}
       </ul>
-      <a href="/admin/index.html" class="ml-auto inline-block text-sm hover:underline">admin</a>
     </div>
+
   </div>
+  <a href="/admin/index.html" class="block text-right text-sm hover:underline -mb-12 -mr-4">admin</a>
 </div>
