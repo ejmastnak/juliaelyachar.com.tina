@@ -15,7 +15,6 @@ export const EventCollection: Collection = {
     time: "4:00 pm",
     location: "Room 101, Example University / Online",
     description: "A brief description of the event, outlining its focus, participants, and broader significance.",
-    href: "https://www.example.com/event",
   },
   fields: [
     {
