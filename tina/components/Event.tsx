@@ -1,4 +1,4 @@
-import { ChevronRightIcon } from '@heroicons/react/24/outline'
+import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline'
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import Pillbox from '@tina/components/Pillbox.tsx'
 
@@ -49,7 +49,7 @@ function date2string(inputDate) {
 export default function Event({event}: Props) {
 
   return (
-    <div className="flex gap-x-4">
+    <div className="flex gap-x-6">
 
       {/* Date */}
       <div className="text-center">
@@ -60,17 +60,22 @@ export default function Event({event}: Props) {
 
       <div>
         <p className="font-semibold text-gray-800">{event.title}</p>
-        <p className="italic text-sm ml-px">{event.institution}</p>
+        <p className="italic text-sm ml-px text-gray-600">{event.institution}</p>
         <div className="flex flex-col gap-x-2 gap-y-1 my-1">
           {event.type && <Pillbox>{event.type}</Pillbox>}
         </div>
         <div className="mt-2 text-sm max-w-2xl myprose"><TinaMarkdown content={event.description} /></div>
-        {event.href && <a href={event.href} className="mt-2 w-fit text-sm text-gray-800 font-medium flex items-center hover:text-gray-900 hover:underline"><span>Link</span> <ChevronRightIcon className="size-4 text-gray-800 hover:text-gray-900 shrink-0 translate-y-px"/></a>}
-
         {event.location && 
           <div className="mt-2.5 text-sm text-gray-600">
             <span className="font-semibold">Location:</span> {event.location}
           </div>
+        }
+
+        {event.href &&
+          <a href={event.href} className="mt-2 w-fit text-sm text-gray-800 font-medium flex items-center gap-x-1 hover:text-gray-900 hover:underline">
+            Link
+            <ArrowTopRightOnSquareIcon className="size-5 text-gray-600 hover:text-gray-900 shrink-0"/>
+          </a>
         }
 
       </div>
