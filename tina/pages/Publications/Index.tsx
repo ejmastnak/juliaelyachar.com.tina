@@ -46,7 +46,7 @@ export default function PublicationsPage(props: Props) {
   */
   function groupPublicationsByCategory(publications) {
     const byCategory = {};
-    for (const publication of publications) {
+    for (const publication of publications.filter(publication => publication.categories)) {
       for (const { category } of publication.categories) {
         const { id, name } = category;
         if (!byCategory[id]) {

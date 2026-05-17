@@ -11,7 +11,10 @@ export const PublicationCollection: Collection = {
     title: "Markets, Morality, and the State",
     type: Object.values(publicationTypes)[0],
     authors: [ { givenName: "Julia", familyName: "Elyachar" } ],
-    containerTitle: "Example Journal of Social Theory"
+    containerTitle: "Example Journal of Social Theory",
+    categories: [ { "category": "tina/content/publicationCategory/ethnography.json" },
+  ]
+
   },
   fields: [
     {
@@ -27,6 +30,38 @@ export const PublicationCollection: Collection = {
       type: 'string',
       required: true,
       options: Object.values(publicationTypes),
+    },
+    {
+      name: 'categories',
+      label: 'Categories',
+      categories: "E.g. NGOs, Political Economy, etc.",
+      type: 'object',
+      required: true,
+      list: true,
+      ui: {
+        itemProps: (category) => {
+          return { label: category.category };
+        },
+      },
+      fields: [
+        {
+          name: 'category',
+          label: 'Category',
+          type: 'reference',
+          collections: ['publicationCategory'],
+          // required: true,
+          ui: {
+            optionComponent: (
+              props: {
+                name: string,
+              },
+              _internalSys: { path: string }
+            ) => {
+              return props.name;
+            }
+          }
+        }
+      ],
     },
     {
       name: 'authors',
@@ -108,37 +143,6 @@ export const PublicationCollection: Collection = {
       name: 'year',
       label: 'Year',
       type: 'string',
-    },
-    {
-      name: 'categories',
-      label: 'Categories',
-      categories: "E.g. NGOs, Political Economy, etc.",
-      type: 'object',
-      list: true,
-      ui: {
-        itemProps: (category) => {
-          return { label: category.category };
-        },
-      },
-      fields: [
-        {
-          name: 'category',
-          label: 'Category',
-          type: 'reference',
-          collections: ['publicationCategory'],
-          // required: true,
-          ui: {
-            optionComponent: (
-              props: {
-                name: string,
-              },
-              _internalSys: { path: string }
-            ) => {
-              return props.name;
-            }
-          }
-        }
-      ],
     },
     {
       name: 'img',

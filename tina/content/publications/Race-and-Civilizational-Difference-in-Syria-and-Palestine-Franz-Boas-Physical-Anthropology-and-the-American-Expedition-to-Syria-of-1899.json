@@ -12,6 +12,11 @@
   "volume": "Advance Publication ",
   "issue": "April 27, 2026",
   "year": "2026",
+  "categories": [
+    {
+      "category": "tina/content/publicationCategory/ethnography.json"
+    }
+  ],
   "href": "https://read.dukeupress.edu/public-culture/article-abstract/doi/10.1215/08992363-12455335/409631/Race-and-Civilizational-Difference-in-Syria-and?redirectedFrom=fulltext",
   "featured": true
 }

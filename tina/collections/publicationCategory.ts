@@ -10,6 +10,8 @@ export const PublicationCategoryCollection: Collection = {
       name: "name",
       label: "Name",
       type: "string",
+      required: true,
+      isTitle: true,
     },
   ],
 };
