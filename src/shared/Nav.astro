@@ -13,11 +13,11 @@ const content = await client.queries.myNav({ relativePath: "index.json" });
 const nav = content.data.nav;
 ---
 
-<nav class={`sticky relative top-0 bg-white border-b z-20 py-5 px-6 ${classes ? classes : ''}`} >
+<nav class={`sticky relative top-0 bg-white border-b z-20 h-[var(--header-height)] px-6 ${classes ? classes : ''}`} >
 
-  <div class="max-w-5xl mx-auto">
+  <div class="max-w-5xl mx-auto flex items-center h-full">
 
-    <div class="flex items-center">
+    <div class="flex items-center w-full justify-content:space-between">
 
       <NavLink classes="text-xl sm:hidden md:inline font-medium text-nowrap" href="/">Julia Elyachar</NavLink>
 
