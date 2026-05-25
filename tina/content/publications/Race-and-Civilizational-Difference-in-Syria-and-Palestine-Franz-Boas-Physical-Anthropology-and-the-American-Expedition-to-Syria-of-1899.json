@@ -1,6 +1,11 @@
 {
   "title": "Race and Civilizational Difference in Syria and Palestine: Franz Boas, Physical Anthropology, and the American Expedition to Syria of 1899",
   "type": "Journal article",
+  "categories": [
+    {
+      "category": "tina/content/publicationCategory/ethnography.json"
+    }
+  ],
   "authors": [
     {
       "givenName": "Julia",
@@ -12,11 +17,6 @@
   "volume": "Advance Publication ",
   "issue": "April 27, 2026",
   "year": "2026",
-  "categories": [
-    {
-      "category": "tina/content/publicationCategory/ethnography.json"
-    }
-  ],
-  "href": "https://read.dukeupress.edu/public-culture/article-abstract/doi/10.1215/08992363-12455335/409631/Race-and-Civilizational-Difference-in-Syria-and?redirectedFrom=fulltext",
+  "href": "https://read.dukeupress.edu/public-culture/article/doi/10.1215/08992363-12455335/409631/Race-and-Civilizational-Difference-in-Syria-and?guestAccessKey=9f501d01-ac86-4340-9e30-9e9e2efa83c9",
   "featured": true
 }
