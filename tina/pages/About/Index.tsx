@@ -26,7 +26,7 @@ export default function AboutPage(props: Props) {
         <img data-tina-field={tinaField(aboutPage, "img")} src={aboutPage.img} alt={aboutPage.imgAlt} className="hidden sm:block max-w-sm xl:max-w-md h-80 rounded object-cover object-right" />
         <div>
           <p className="myprose" data-tina-field={tinaField(aboutPage, "summary")}>{aboutPage.summary}</p>
-          <LinkButton tinaField={tinaField(aboutPage, "cvButtonText")} classes="mt-5" href="/julia-elyachar-cv.pdf">{aboutPage.cvButtonText}</LinkButton>
+          <LinkButton tinaField={tinaField(aboutPage, "cvButtonText")} classes="mt-5" href="/cv.pdf">{aboutPage.cvButtonText}</LinkButton>
         </div>
       </div>
 
