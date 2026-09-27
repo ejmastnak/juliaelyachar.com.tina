@@ -9,7 +9,6 @@
     "preview": "astro preview",
     "typecheck": "tsc --noEmit",
     "astro": "astro",
-    "postinstall": "patch-package",
     "postbuild": "node scripts/remove-login-llama.js"
   },
   "dependencies": {
