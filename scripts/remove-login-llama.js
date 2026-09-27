@@ -26,7 +26,7 @@ if (html.includes("TINA_ADMIN_LLAMA_PATCH")) {
 const injection = `
 <!-- TINA_ADMIN_LLAMA_PATCH -->
 <style>
-  img[alt="TinaCMS Security Illustration"] {
+  img[alt="Tina the Llama playing a large orange key like a guitar."] {
     display: none !important;
   }
 </style>
